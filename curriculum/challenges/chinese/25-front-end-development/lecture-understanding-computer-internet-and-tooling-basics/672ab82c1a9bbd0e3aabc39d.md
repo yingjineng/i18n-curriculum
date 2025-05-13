@@ -1,6 +1,6 @@
 ---
 id: 672ab82c1a9bbd0e3aabc39d
-title: How Can You Effectively Work With Your Keyboard, Mouse, and Other Pointing Devices
+title: 如何高效地使用键盘、鼠标和其他指点设备
 challengeType: 11
 videoId: AcTxNEVccxc
 dashedName: how-to-effectively-work-with-your-keyboard-mouse-and-other-pointing-devices
@@ -8,65 +8,65 @@ dashedName: how-to-effectively-work-with-your-keyboard-mouse-and-other-pointing-
 
 # --description--
 
-Watch the video or read the transcript and answer the questions below.
+观看视频或阅读文字稿，并回答下列问题。
 
 # --transcript--
 
-How can you effectively work with your keyboard, mouse, and other pointing devices?
+如何高效地使用键盘、鼠标和其他指点设备？
 
-Many of you have been used to working with your keyboard and mouse for years on end for a variety of activities like gaming, performing tasks for work, or surfing the web.
+你们中的许多人已经习惯了多年使用键盘和鼠标进行各种活动，比如玩游戏、完成工作任务或浏览网页。
 
-But prolonged misuse of these devices can lead to serious health problems down the road.
+但长时间不正确地使用这些设备，可能会导致严重的健康问题。
 
-In this lecture video, we will cover ways to work with your computer’s keyboard and mouse in healthy ways.
+在本讲视频中，我们将介绍如何以健康的方式使用电脑的键盘和鼠标。
 
-The first tip is to be mindful of the mouse grip. When working on serious tasks for work or during intense gaming moments, you may tend to grip the mouse too hard. However, this can lead to serious hand and wrist issues. To prevent this, you want to make sure to hold the mouse gently and keep your fingers nice and relaxed.
+第一个建议是注意鼠标的握持方式。在处理重要工作任务或激烈游戏时，你可能会不自觉地用力握紧鼠标。然而，这样会导致手部和手腕出现严重问题。为避免这种情况，你应该轻松地握住鼠标，让手指保持放松。
 
-The second tip is to consider using an ergonomic keyboard and mouse. These tools are designed to reduce wrist strain by keeping your hands in a more natural position.
+第二个建议是考虑使用人体工学键盘和鼠标。这些工具旨在通过让你的手保持更自然的位置来减少手腕的压力。
 
-While prices for these devices can vary and may be a costly purchase for your current budget, they can be a good investment in your overall long-term health. So, you might consider starting to research an ergonomic keyboard and mouse to use.
+虽然这些设备的价格各异，可能会超出你当前的预算，但它们对你的长期健康来说是值得投资的。因此，你可以开始了解并考虑使用人体工学键盘和鼠标。
 
-Another tip is to keep your mouse the same height as your keyboard. You don't want to have to reach up or down to use the mouse, as this can strain your wrist and arm muscles over time.
+另一个建议是让鼠标与键盘保持同一高度。你不应该为了使用鼠标而向上或向下伸手，因为这会随着时间推移对手腕和手臂肌肉造成压力。
 
-You also want to be mindful of your overall posture when sitting at the computer for hours on end. Being slouched over your computer and putting your wrist in an unnatural position at the keyboard will lead to long-term health issues. So, you want to make sure to sit up straight when working at your computer and maintain a healthy and natural wrist position.
+长时间坐在电脑前时，也要注意整体坐姿。如果你总是弯腰驼背，手腕在键盘上处于不自然的位置，长期下来会导致健康问题。因此，工作时要保持挺直坐姿，并让手腕保持健康自然的位置。
 
-The last tip would be to use keyboard shortcuts whenever possible to help minimize typing. There are dozens of shortcuts available for tasks such as navigating the web, navigating around your operating system, working within a code editor, and more. So, it’s best to research some of these keyboard shortcuts and and start incorporating them into your daily computer usage.
+最后一个建议是尽量使用键盘快捷键，以减少打字量。有许多快捷键可以帮助你完成网页浏览、操作系统导航、代码编辑器操作等任务。建议你查找并开始在日常电脑使用中应用这些快捷键。
 
-As you continue using your mouse and keyboard for upcoming coding projects and other activities, remember to keep these health tips in mind.
+在你继续使用鼠标和键盘进行编程项目或其他活动时，请记住这些健康建议。
 
 # --questions--
 
 ## --text--
 
-What is one of the risks of gripping the mouse too tightly?
+过度用力握鼠标可能带来什么风险？
 
 ## --answers--
 
-It can improve your accuracy in gaming.
+它可以提升你在游戏中的准确性。
 
 ### --feedback--
 
-Pay attention to the advice about mouse grip in the video.
+请注意视频中关于鼠标握持的建议。
 
 ---
 
-It helps you complete tasks faster.
+它能让你更快完成任务。
 
 ### --feedback--
 
-Pay attention to the advice about mouse grip in the video.
+请注意视频中关于鼠标握持的建议。
 
 ---
 
-It can cause hand and wrist issues.
+它可能导致手部和手腕问题。
 
 ---
 
-It improves your overall performance.
+它能提升你的整体表现。
 
 ### --feedback--
 
-Pay attention to the advice about mouse grip in the video.
+请注意视频中关于鼠标握持的建议。
 
 ## --video-solution--
 
@@ -74,35 +74,35 @@ Pay attention to the advice about mouse grip in the video.
 
 ## --text--
 
-What is the benefit of using an ergonomic keyboard and mouse?
+使用人体工学键盘和鼠标有什么好处？
 
 ## --answers--
 
-They help you type faster.
+它们能让你打字更快。
 
 ### --feedback--
 
-The video mentions ergonomic devices as a way to protect your hands and wrists.
+视频提到人体工学设备是为了保护你的手和手腕。
 
 ---
 
-They are designed for gaming performance.
+它们专为游戏性能设计。
 
 ### --feedback--
 
-The video mentions ergonomic devices as a way to protect your hands and wrists.
+视频提到人体工学设备是为了保护你的手和手腕。
 
 ---
 
-They reduce wrist strain by keeping your hands in a more natural position.
+它们通过让你的手保持更自然的位置来减少手腕压力。
 
 ---
 
-They increase screen resolution.
+它们能提升屏幕分辨率。
 
 ### --feedback--
 
-The video mentions ergonomic devices as a way to protect your hands and wrists.
+视频提到人体工学设备是为了保护你的手和手腕。
 
 ## --video-solution--
 
@@ -110,36 +110,37 @@ The video mentions ergonomic devices as a way to protect your hands and wrists.
 
 ## --text--
 
-What is the recommendation for the height of your mouse in relation to your keyboard?
+关于鼠标与键盘的高度，有什么建议？
 
 ## --answers--
 
-The mouse should be far above the keyboard.
+鼠标应远高于键盘。
 
 ### --feedback--
 
-Think about how to position your mouse to avoid wrist and arm strain.
+想一想如何摆放鼠标以避免手腕和手臂的压力。
 
 ---
 
-The mouse should be at the same height as the keyboard.
+鼠标应与键盘保持同一高度。
 
 ---
 
-The mouse should be lower than the keyboard.
+鼠标应低于键盘。
 
 ### --feedback--
 
-Think about how to position your mouse to avoid wrist and arm strain.
+想一想如何摆放鼠标以避免手腕和手臂的压力。
 
 ---
 
-The mouse should be higher than the keyboard.
+鼠标应高于键盘。
 
 ### --feedback--
 
-Think about how to position your mouse to avoid wrist and arm strain.
+想一想如何摆放鼠标以避免手腕和手臂的压力。
 
 ## --video-solution--
 
 2
+

@@ -8,21 +8,21 @@ dashedName: build-a-tribute-page
 
 # --description--
 
-Fulfill the user stories below and get all the tests to pass to complete the lab.
+完成以下用户故事并通过所有测试以完成本实验。
 
-**用户需求:**
+**用户需求：**
 
-1. Your tribute page should have a `main` element with a corresponding `id` of `main`, which contains all other elements.
-1. You should see an element with an `id` of `title`, which contains a string (i.e. text), that describes the subject of the tribute page (e.g. "Dr. Norman Borlaug").
-1. You should see either a `figure` or a `div` element with an `id` of `img-div`.
-1. Within the `#img-div` element, you should see an `img` element with a corresponding `id="image"`.
-1. Within the `#img-div` element, you should see an element with a corresponding `id="img-caption"` that contains textual content describing the image shown in `#img-div`.
-1. You should see an element with a corresponding `id="tribute-info"`, which contains textual content describing the subject of the tribute page.
-1. 你应该看到一个带有相应 `id="tribute-link"` 的 `a` 元素，该元素链接到外部站点，其中包含有关致敬页面主题的附加信息。 HINT: You must give your element an attribute of `target` and set it to `_blank` in order for your link to open in a new tab.
-1. Your `#image` should use `max-width` and `height` properties to resize responsively, relative to the width of its parent element, without exceeding its original size.
-1. Your `img` element should be centered within its parent element.
+1. 你的致敬页应包含一个 `main` 元素，并且其 `id` 为 `main`，该元素包含所有其他元素。
+1. 你应该看到一个 `id` 为 `title` 的元素，包含描述致敬页主题的文本（例如：“诺曼·博劳格博士”）。
+1. 你应该看到一个 `id` 为 `img-div` 的 `figure` 或 `div` 元素。
+1. 在 `#img-div` 元素内，你应该看到一个 `id="image"` 的 `img` 元素。
+1. 在 `#img-div` 元素内，你应该看到一个 `id="img-caption"` 的元素，包含描述 `#img-div` 中图片的文本内容。
+1. 你应该看到一个 `id="tribute-info"` 的元素，包含描述致敬页主题的文本内容。
+1. 你应该看到一个带有 `id="tribute-link"` 的 `a` 元素，该元素链接到包含致敬页主题更多信息的外部网站。提示：你必须为该元素添加 `target="_blank"` 属性，使链接在新标签页中打开。
+1. 你的 `#image` 应使用 `max-width` 和 `height` 属性，使其相对于父元素宽度自适应缩放，且不超过原始尺寸。
+1. 你的 `img` 元素应在其父元素内居中。
 
-**Note:** Be sure to link your stylesheet in your HTML and apply your CSS.
+**注意：** 请确保在 HTML 中链接样式表并应用 CSS。
 
 # --hints--
 
@@ -204,10 +204,10 @@ assert.isBelow(rightMargin - leftMargin, 6);
 
 ```html
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
   <head>
     <meta charset="UTF-8" />
-    <title>Tribute Page</title>
+    <title>致敬页</title>
   </head>
 
   <body></body>
@@ -228,113 +228,80 @@ assert.isBelow(rightMargin - leftMargin, 6);
   </head>
   <body>
     <main id="main">
-      <h1 id="title">Dr. Norman Borlaug</h1>
-      <p>The man who saved a billion lives</p>
+      <h1 id="title">诺曼·博劳格博士</h1>
+      <p>拯救十亿生命的人</p>
       <figure id="img-div">
         <img
           id="image"
           src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute-page-main-image.jpg"
-          alt="Dr. Norman Borlaug seen standing in Mexican wheat field with a group of biologists"
+          alt="诺曼·博劳格博士与一群生物学家站在墨西哥小麦田中"
         />
         <figcaption id="img-caption">
-          Dr. Norman Borlaug, third from the left, trains biologists in Mexico
-          on how to increase wheat yields - part of his life-long war on hunger.
+          诺曼·博劳格博士（左三）在墨西哥培训生物学家，教授如何提高小麦产量——这是他毕生致力于消除饥饿事业的一部分。
         </figcaption>
       </figure>
       <section id="tribute-info">
-        <h3 id="headline">Here's a time line of Dr. Borlaug's life:</h3>
+        <h3 id="headline">以下是博劳格博士的人生时间线：</h3>
         <ul>
-          <li><strong>1914</strong> - Born in Cresco, Iowa</li>
+          <li><strong>1914年</strong> - 出生于爱荷华州克雷斯科</li>
           <li>
-            <strong>1933</strong> - Leaves his family's farm to attend the
-            University of Minnesota, thanks to a Depression era program known as
-            the "National Youth Administration"
+            <strong>1933年</strong> - 离开家乡农场，凭借“大萧条”时期的“国家青年管理局”项目进入明尼苏达大学
           </li>
           <li>
-            <strong>1935</strong> - Has to stop school and save up more money.
-            Works in the Civilian Conservation Corps, helping starving
-            Americans. "I saw how food changed them", he said. "All of this left
-            scars on me."
+            <strong>1935年</strong> - 因经济原因辍学打工，参与平民保护团，帮助饥饿的美国人。他说：“我看到食物如何改变了他们，这一切在我心中留下了伤痕。”
           </li>
           <li>
-            <strong>1937</strong> - Finishes university and takes a job in the
-            US Forestry Service
+            <strong>1937年</strong> - 大学毕业，进入美国林务局工作
           </li>
           <li>
-            <strong>1938</strong> - Marries wife of 69 years Margret Gibson.
-            Gets laid off due to budget cuts. Inspired by Elvin Charles Stakman,
-            he returns to school study under Stakman, who teaches him about
-            breeding pest-resistant plants.
+            <strong>1938年</strong> - 与玛格丽特·吉布森结婚（婚姻持续69年），因预算削减被裁员。受埃尔文·查尔斯·斯塔克曼启发，重返校园师从斯塔克曼，学习抗虫害植物育种。
           </li>
           <li>
-            <strong>1941</strong> - Tries to enroll in the military after the
-            Pearl Harbor attack, but is rejected. Instead, the military asked
-            his lab to work on waterproof glue, DDT to control malaria,
-            disinfectants, and other applied science.
+            <strong>1941年</strong> - 珍珠港事件后试图参军被拒，军方要求其实验室研发防水胶、控制疟疾的DDT、消毒剂等应用科学项目。
           </li>
           <li>
-            <strong>1942</strong> - Receives a Ph.D. in Genetics and Plant
-            Pathology
+            <strong>1942年</strong> - 获得遗传学与植物病理学博士学位
           </li>
           <li>
-            <strong>1944</strong> - Rejects a 100% salary increase from Dupont,
-            leaves behind his pregnant wife, and flies to Mexico to head a new
-            plant pathology program. Over the next 16 years, his team breeds
-            6,000 different strains of disease resistant wheat - including
-            different varieties for each major climate on Earth.
+            <strong>1944年</strong> - 拒绝杜邦公司100%加薪，离开怀孕的妻子，飞往墨西哥主持新植物病理项目。16年间，他的团队培育出6000种抗病小麦品种，涵盖地球各大气候类型。
           </li>
           <li>
-            <strong>1945</strong> - Discovers a way to grown wheat twice each
-            season, doubling wheat yields
+            <strong>1945年</strong> - 发现一年可种植两季小麦，使产量翻倍
           </li>
           <li>
-            <strong>1953</strong> - crosses a short, sturdy dwarf breed of wheat
-            with a high-yielding American breed, creating a strain that responds
-            well to fertilizer. It goes on to provide 95% of Mexico's wheat.
+            <strong>1953年</strong> - 将矮壮高产的小麦与美国高产品种杂交，培育出适合施肥的品种，最终占墨西哥小麦产量的95%。
           </li>
           <li>
-            <strong>1962</strong> - Visits Delhi and brings his high-yielding
-            strains of wheat to the Indian subcontinent in time to help mitigate
-            mass starvation due to a rapidly expanding population
+            <strong>1962年</strong> - 访问德里，将高产小麦品种带到印度次大陆，帮助缓解因人口激增导致的大规模饥荒
           </li>
-          <li><strong>1970</strong> - receives the Nobel Peace Prize</li>
+          <li><strong>1970年</strong> - 获得诺贝尔和平奖</li>
           <li>
-            <strong>1983</strong> - helps seven African countries dramatically
-            increase their maize and sorghum yields
+            <strong>1983年</strong> - 帮助七个非洲国家大幅提高玉米和高粱产量
           </li>
           <li>
-            <strong>1984</strong> - becomes a distinguished professor at Texas
-            A&M University
+            <strong>1984年</strong> - 成为德克萨斯农工大学杰出教授
           </li>
           <li>
-            <strong>2005</strong> - states "we will have to double the world
-            food supply by 2050." Argues that genetically modified crops are the
-            only way we can meet the demand, as we run out of arable land. Says
-            that GM crops are not inherently dangerous because "we've been
-            genetically modifying plants and animals for a long time. Long
-            before we called it science, people were selecting the best breeds."
+            <strong>2005年</strong> - 提出“到2050年我们必须使全球粮食供应翻倍”，认为转基因作物是唯一可行途径，并表示“我们很早以前就在对动植物进行基因改良，这并不危险。”
           </li>
-          <li><strong>2009</strong> - dies at the age of 95.</li>
+          <li><strong>2009年</strong> - 享年95岁去世。</li>
         </ul>
         <blockquote
           cite="http://news.rediff.com/report/2009/sep/14/pm-pays-tribute-to-father-of-green-revolution-borlaug.htm"
         >
           <p>
-            "Borlaug's life and achievement are testimony to the far-reaching
-            contribution that one man's towering intellect, persistence and
-            scientific vision can make to human peace and progress."
+            “博劳格的一生和成就证明了一个人的卓越智慧、坚持和科学远见能为人类和平与进步做出多么深远的贡献。”
           </p>
-          <cite>-- Indian Prime Minister Manmohan Singh</cite>
+          <cite>—— 印度总理 曼莫汉·辛格</cite>
         </blockquote>
         <h3>
-          If you have time, you should read more about this incredible human
-          being on his
+          如果你有时间，建议阅读
           <a
             id="tribute-link"
-            href="https://en.wikipedia.org/wiki/Norman_Borlaug"
+            href="https://zh.wikipedia.org/wiki/%E8%AF%BA%E6%9B%BC%C2%B7%E5%8D%9A%E5%8A%B3%E6%A0%BC"
             target="_blank"
-            >Wikipedia entry</a
-          >.
+            >他的维基百科词条</a
+          >，了解这位杰出人物的更多事迹。
         </h3>
       </section>
     </main>
@@ -344,14 +311,14 @@ assert.isBelow(rightMargin - leftMargin, 6);
 
 ```css
 html {
-  /* Setting a base font size of 10px give us easier rem calculations
-       Info: 1rem === 10px, 1.5rem === 15px, 2rem === 20px and so forth
-     */
+  /* 设置基础字体大小为10px，便于rem计算
+     说明：1rem === 10px，1.5rem === 15px，2rem === 20px，以此类推
+   */
   font-size: 10px;
 }
 
 body {
-  /* Native font stack https://getbootstrap.com/docs/4.2/content/reboot/#native-font-stack */
+  /* 原生字体栈 https://getbootstrap.com/docs/4.2/content/reboot/#native-font-stack */
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
     'Helvetica Neue', Arial, sans-serif;
   font-size: 1.6rem;
@@ -444,3 +411,4 @@ blockquote {
   text-align: left;
 }
 ```
+

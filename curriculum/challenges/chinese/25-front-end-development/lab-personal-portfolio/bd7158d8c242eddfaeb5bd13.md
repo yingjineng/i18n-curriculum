@@ -1,6 +1,6 @@
 ---
 id: bd7158d8c242eddfaeb5bd13
-title: Build a Personal Portfolio
+title: 构建个人作品集
 challengeType: 25
 dashedName: build-a-personal-portfolio
 demoType: onClick
@@ -8,23 +8,23 @@ demoType: onClick
 
 # --description--
 
-Fulfill the user stories below and get all the tests to pass to complete the lab.
+完成以下用户故事并通过所有测试以完成本实验。
 
-**用户需求:**
+**用户需求：**
 
-1. Your portfolio should have a welcome section with an `id` of `welcome-section`.
-2. The welcome section should have an `h1` element that contains text.
-3. Your portfolio should have a projects section with an `id` of `project-section`.
-4. The projects section should contain at least one element with a `class` of `project-tile` to hold a project.
-5. The projects section should contain at least one link to a project.
-6. Your portfolio should have a navbar with an id of `navbar`.
-7. The navbar should contain at least one link that you can click on to navigate to different sections of the page.
-8. Your portfolio should have a link with an id of `profile-link`, which opens your GitHub or freeCodeCamp profile in a new tab.
-9. Your portfolio should have at least one media query.
-10. The height of the welcome section should be equal to the height of the viewport.
-11. The navbar should always be at the top of the viewport.
+1. 你的作品集应有一个 `id` 为 `welcome-section` 的欢迎部分。
+2. 欢迎部分应包含一个带有文本的 `h1` 元素。
+3. 你的作品集应有一个 `id` 为 `project-section` 的项目部分。
+4. 项目部分应包含至少一个 `class` 为 `project-tile` 的元素用于展示项目。
+5. 项目部分应至少包含一个指向项目的链接。
+6. 你的作品集应有一个 `id` 为 `navbar` 的导航栏。
+7. 导航栏应至少包含一个可点击跳转到页面不同部分的链接。
+8. 你的作品集应有一个 `id` 为 `profile-link` 的链接，点击后在新标签页打开你的 GitHub 或 freeCodeCamp 个人主页。
+9. 你的作品集应至少包含一个媒体查询。
+10. 欢迎部分的高度应等于视口高度。
+11. 导航栏应始终位于视口顶部。
 
-**Note:** Be sure to link your stylesheet in your HTML and apply your CSS.
+**注意：** 请确保在 HTML 中链接样式表并应用 CSS。
 
 # --hints--
 
@@ -55,7 +55,7 @@ assert.isAbove(
 );
 ```
 
-You should have a "Projects" section with an `id` of `project-section`.
+你的作品集应该有一个 `id` 为 `project-section` 的“项目”部分。
 
 ```js
 const el = document.getElementById('project-section');
@@ -71,7 +71,7 @@ assert.isAbove(
 );
 ```
 
-Your `#project-section` element should contain at least one `a` element.
+你的 `#project-section` 元素应该包含至少一个 `a` 元素。
 
 ```js
 assert.isAbove(document.querySelectorAll('#project-section a').length, 0);
@@ -84,7 +84,7 @@ const el = document.getElementById('navbar');
 assert.isNotNull(el);
 ```
 
-你的 `#navbar` 元素应该包含至少一个 `a` 元素，它的 `href` 属性以 `#` 开头。
+你的 `#navbar` 元素应该包含至少一个 `a` 元素，其 `href` 属性以 `#` 开头。
 
 ```js
 const links = [...document.querySelectorAll('#navbar a')].filter(
@@ -154,10 +154,10 @@ assert.isTrue(cssCheck.length > 0 || htmlSourceAttr.length > 0);
 
 ```html
 <!doctype html>
-<html lang="en">
+<html lang="zh">
   <head>
     <meta charset="UTF-8" />
-    <title>Personal Portfolio</title>
+    <title>个人作品集</title>
   </head>
   <body></body>
 </html>
@@ -191,37 +191,37 @@ assert.isTrue(cssCheck.length > 0 || htmlSourceAttr.length > 0);
   </head>
 
   <body>
-    <!-- START NAV -->
+    <!-- 导航栏开始 -->
 
     <nav id="navbar" class="nav">
       <ul class="nav-list">
         <li>
-          <a href="#welcome-section">About</a>
+          <a href="#welcome-section">关于</a>
         </li>
         <li>
-          <a href="#project-section">Work</a>
+          <a href="#project-section">作品</a>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+          <a href="#contact">联系</a>
         </li>
       </ul>
     </nav>
 
-    <!-- END NAV -->
+    <!-- 导航栏结束 -->
 
-    <!-- START WELCOME SECTION -->
+    <!-- 欢迎部分开始 -->
 
     <section id="welcome-section" class="welcome-section">
-      <h1>Hey I am Mimic</h1>
-      <p>a web developer</p>
+      <h1>你好，我是 Mimic</h1>
+      <p>一名前端开发者</p>
     </section>
 
-    <!-- END WELCOME SECTION -->
+    <!-- 欢迎部分结束 -->
 
-    <!-- START PROJECTS SECTION -->
+    <!-- 项目部分开始 -->
 
     <section id="project-section" class="projects-section">
-      <h2 class="projects-section-header">These are some of my projects</h2>
+      <h2 class="projects-section-header">以下是我的部分项目</h2>
 
       <div class="projects-grid">
         <a
@@ -232,11 +232,11 @@ assert.isTrue(cssCheck.length > 0 || htmlSourceAttr.length > 0);
           <img
             class="project-image"
             src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg"
-            alt="project"
+            alt="项目"
           />
           <p class="project-title">
             <span class="code">&lt;</span>
-            Tribute Page
+            致敬页面
             <span class="code">&#47;&gt;</span>
           </p>
         </a>
@@ -248,11 +248,11 @@ assert.isTrue(cssCheck.length > 0 || htmlSourceAttr.length > 0);
           <img
             class="project-image"
             src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png"
-            alt="project"
+            alt="项目"
           />
           <p class="project-title">
             <span class="code">&lt;</span>
-            Random Quote Machine
+            随机名言机
             <span class="code">&#47;&gt;</span>
           </p>
         </a>
@@ -264,11 +264,11 @@ assert.isTrue(cssCheck.length > 0 || htmlSourceAttr.length > 0);
           <img
             class="project-image"
             src="https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png"
-            alt="project"
+            alt="项目"
           />
           <p class="project-title">
             <span class="code">&lt;</span>
-            JavaScript Calculator
+            JavaScript 计算器
             <span class="code">&#47;&gt;</span>
           </p>
         </a>
@@ -280,11 +280,11 @@ assert.isTrue(cssCheck.length > 0 || htmlSourceAttr.length > 0);
           <img
             class="project-image"
             src="https://cdn.freecodecamp.org/testable-projects-fcc/images/map.jpg"
-            alt="project"
+            alt="项目"
           />
           <p class="project-title">
             <span class="code">&lt;</span>
-            Map Data Across the Globe
+            全球地图数据
             <span class="code">&#47;&gt;</span>
           </p>
         </a>
@@ -296,11 +296,11 @@ assert.isTrue(cssCheck.length > 0 || htmlSourceAttr.length > 0);
           <img
             class="project-image"
             src="https://cdn.freecodecamp.org/testable-projects-fcc/images/wiki.png"
-            alt="project"
+            alt="项目"
           />
           <p class="project-title">
             <span class="code">&lt;</span>
-            Wikipedia Viewer
+            维基百科浏览器
             <span class="code">&#47;&gt;</span>
           </p>
         </a>
@@ -312,11 +312,11 @@ assert.isTrue(cssCheck.length > 0 || htmlSourceAttr.length > 0);
           <img
             class="project-image"
             src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tic-tac-toe.png"
-            alt="project"
+            alt="项目"
           />
           <p class="project-title">
             <span class="code">&lt;</span>
-            Tic Tac Toe Game
+            井字棋游戏
             <span class="code">&#47;&gt;</span>
           </p>
         </a>
@@ -326,18 +326,18 @@ assert.isTrue(cssCheck.length > 0 || htmlSourceAttr.length > 0);
         href="https://codepen.io/FreeCodeCamp/"
         class="btn btn-show-all"
         target="_blank"
-        >Show all<i class="fas fa-chevron-right"></i
+        >查看全部<i class="fas fa-chevron-right"></i
       ></a>
     </section>
 
-    <!-- END PROJECTS SECTION -->
+    <!-- 项目部分结束 -->
 
-    <!-- START CONTACT SECTION -->
+    <!-- 联系部分开始 -->
 
     <section id="contact" class="contact-section">
       <div class="contact-section-header">
-        <h2>Let's work together...</h2>
-        <p>How do you take your coffee?</p>
+        <h2>让我们一起合作吧……</h2>
+        <p>你喜欢喝什么咖啡？</p>
       </div>
       <div class="contact-links">
         <a
@@ -360,32 +360,32 @@ assert.isTrue(cssCheck.length > 0 || htmlSourceAttr.length > 0);
           ><i class="fab fa-twitter"></i> Twitter</a
         >
         <a href="mailto:example@example.com" class="btn contact-details"
-          ><i class="fas fa-at"></i> Send a mail</a
+          ><i class="fas fa-at"></i> 发送邮件</a
         >
         <a href="tel:555-555-5555" class="btn contact-details"
-          ><i class="fas fa-mobile-alt"></i> Call me</a
+          ><i class="fas fa-mobile-alt"></i> 拨打电话</a
         >
       </div>
     </section>
 
-    <!-- END CONTACT SECTION -->
+    <!-- 联系部分结束 -->
 
-    <!-- START FOOTER SECTION -->
+    <!-- 页脚部分开始 -->
 
     <footer>
       <p>
-        **This is just a fake portfolio. All the projects and contact details
-        given are not real.
+        **这只是一个虚构的作品集。所有项目和联系方式均为示例。
       </p>
       <p>
-        &copy; Created for
+        &copy; 为
         <a href="https://www.freecodecamp.org/" target="_blank"
           >freeCodeCamp <i class="fab fa-free-code-camp"></i
         ></a>
+        创建
       </p>
     </footer>
 
-    <!-- END FOOTER SECTION -->
+    <!-- 页脚部分结束 -->
 </body>
 </body>
 
@@ -395,7 +395,7 @@ assert.isTrue(cssCheck.length > 0 || htmlSourceAttr.length > 0);
 ```
 
 ```css
-/* Custom properties/variables  */
+/* 自定义属性/变量  */
 :root {
   --main-white: #f0f0f0;
   --main-red: #be3144;
@@ -403,13 +403,13 @@ assert.isTrue(cssCheck.length > 0 || htmlSourceAttr.length > 0);
   --main-gray: #303841;
 }
 
-/* Base reset */
+/* 基础重置 */
 * {
   margin: 0;
   padding: 0;
 }
 
-/* box-sizing and font sizing */
+/* box-sizing 和字体大小设置 */
 *,
 *::before,
 *::after {
@@ -419,26 +419,22 @@ assert.isTrue(cssCheck.length > 0 || htmlSourceAttr.length > 0);
 html {
   box-sizing: border-box;
 
-  /* Set font size for easy rem calculations
-   * default document font size = 16px, 1rem = 16px, 100% = 16px
+  /* 设置字体大小，便于 rem 计算
+   * 默认文档字体大小 = 16px, 1rem = 16px, 100% = 16px
    * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
   */
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
 
-/* A few media query to set some font sizes at different screen sizes.
- * This helps automate a bit of responsiveness.
- * The trick is to use the rem unit for size values, margin and padding.
- * Because rem is relative to the document font size
- * when we scale up or down the font size on the document
- * it will affect all properties using rem units for the values.
+/* 不同屏幕尺寸下的字体大小媒体查询
+ * 这样可以自动适配响应式
+ * rem 单位会随着 html 字体大小缩放
 */
 
-/* I am using the em unit for breakpoints
- * The calculation is the following
- * screen size divided by browser base font size
- * As an example: a breakpoint at 980px
+/* 断点计算方式
+ * 屏幕宽度除以浏览器基础字体大小
+ * 例如：断点 980px
  * 980px / 16px = 61.25em
 */
 
@@ -463,7 +459,7 @@ html {
   }
 }
 
-/* Base styles */
+/* 基础样式 */
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -503,7 +499,7 @@ img {
   width: 100%;
 }
 
-/* nav */
+/* 导航栏 */
 
 .nav {
   display: flex;
@@ -542,7 +538,7 @@ img {
   background: var(--main-blue);
 }
 
-/* Welcome section */
+/* 欢迎部分 */
 
 .welcome-section {
   display: flex;
@@ -562,7 +558,7 @@ img {
   color: var(--main-red);
 }
 
-/* Projects section */
+/* 项目部分 */
 
 .projects-section {
   text-align: center;
@@ -582,7 +578,7 @@ img {
   }
 }
 
-/* "Automagic" image grid using no media queries */
+/* “自动”图片网格，无需媒体查询 */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -655,7 +651,7 @@ img {
   transition: transform 0.3s ease-out;
 }
 
-/* Contact section */
+/* 联系部分 */
 
 .contact-section {
   display: flex;
@@ -702,7 +698,7 @@ img {
   transform: translateY(8px);
 }
 
-/* Footer */
+/* 页脚 */
 
 footer {
   font-weight: 300;

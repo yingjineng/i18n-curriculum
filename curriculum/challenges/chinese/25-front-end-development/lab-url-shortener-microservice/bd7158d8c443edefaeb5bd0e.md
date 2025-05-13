@@ -7,19 +7,19 @@ dashedName: url-shortener-microservice
 
 # --description--
 
-Build a full stack JavaScript app that is functionally similar to this: <a href="https://url-shortener-microservice.freecodecamp.rocks" target="_blank" rel="noopener noreferrer nofollow">https://url-shortener-microservice.freecodecamp.rocks</a>. Working on this project will involve you writing your code using one of the following methods:
+构建一个与此功能类似的全栈 JavaScript 应用：<a href="https://url-shortener-microservice.freecodecamp.rocks" target="_blank" rel="noopener noreferrer nofollow">https://url-shortener-microservice.freecodecamp.rocks</a>。你可以通过以下任一方式编写你的代码：
 
--   Clone <a href="https://github.com/freeCodeCamp/boilerplate-project-urlshortener/" target="_blank" rel="noopener noreferrer nofollow">this GitHub repo</a> and complete your project locally.
+-   克隆<a href="https://github.com/freeCodeCamp/boilerplate-project-urlshortener/" target="_blank" rel="noopener noreferrer nofollow">此 GitHub 仓库</a>并在本地完成你的项目。
 -   使用<a href="https://gitpod.io/?autostart=true#https://github.com/freeCodeCamp/boilerplate-project-urlshortener/" target="_blank" rel="noopener noreferrer nofollow">我们的 Gitpod 初始项目</a>来完成你的项目。
--   使用你选择的网站生成器来完成项目。 需要包含我们 GitHub 仓库的所有文件。
+-   使用你选择的网站生成器来完成项目。需要包含我们 GitHub 仓库的所有文件。
 
 # --instructions--
 
-**HINT:** Do not forget to use a body parsing middleware to handle the POST requests. Also, you can use the function `dns.lookup(host, cb)` from the `dns` core module to verify a submitted URL.
+**提示：** 不要忘记使用 body 解析中间件来处理 POST 请求。同时，你可以使用 `dns` 核心模块中的 `dns.lookup(host, cb)` 函数来验证提交的 URL。
 
 # --hints--
 
-提交自己的项目，而不是示例的 URL。
+提交你自己的项目，而不是示例的 URL。
 
 ```js
 (getUserInput) => {
@@ -31,7 +31,7 @@ Build a full stack JavaScript app that is functionally similar to this: <a href=
 };
 ```
 
-You can POST a URL to `/api/shorturl` and get a JSON response with `original_url` and `short_url` properties. Here's an example: `{ original_url : 'https://freeCodeCamp.org', short_url : 1}`
+你可以向 `/api/shorturl` 发送一个 URL 的 POST 请求，并获得包含 `original_url` 和 `short_url` 属性的 JSON 响应。例如：`{ original_url : 'https://freeCodeCamp.org', short_url : 1}`
 
 ```js
 async (getUserInput) => {
@@ -53,7 +53,7 @@ async (getUserInput) => {
 };
 ```
 
-When you visit `/api/shorturl/<short_url>`, you will be redirected to the original URL.
+当你访问 `/api/shorturl/<short_url>` 时，你会被重定向到原始 URL。
 
 ```js
 async (getUserInput) => {
@@ -85,7 +85,7 @@ async (getUserInput) => {
 };
 ```
 
-If you pass an invalid URL that doesn't follow the valid `http://www.example.com` format, the JSON response will contain `{ error: 'invalid url' }`
+如果你传递了一个不符合 `http://www.example.com` 格式的无效 URL，JSON 响应将包含 `{ error: 'invalid url' }`
 
 ```js
 async (getUserInput) => {
@@ -104,4 +104,3 @@ async (getUserInput) => {
   }
 };
 ```
-

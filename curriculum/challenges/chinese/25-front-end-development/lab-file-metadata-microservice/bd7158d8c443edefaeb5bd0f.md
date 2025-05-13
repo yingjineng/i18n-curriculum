@@ -7,19 +7,19 @@ dashedName: file-metadata-microservice
 
 # --description--
 
-Build a full stack JavaScript app that is functionally similar to this: <a href="https://file-metadata-microservice.freecodecamp.rocks" target="_blank" rel="noopener noreferrer nofollow">https://file-metadata-microservice.freecodecamp.rocks</a>. Working on this lab will involve you writing your code using one of the following methods:
+构建一个与此功能类似的全栈 JavaScript 应用：<a href="https://file-metadata-microservice.freecodecamp.rocks" target="_blank" rel="noopener noreferrer nofollow">https://file-metadata-microservice.freecodecamp.rocks</a>。你可以通过以下任一方式编写你的代码来完成本实验：
 
--   Clone <a href="https://github.com/freeCodeCamp/boilerplate-project-filemetadata/" target="_blank" rel="noopener noreferrer nofollow">this GitHub repo</a> and complete your project locally.
--   使用<a href="https://gitpod.io/?autostart=true#https://github.com/freeCodeCamp/boilerplate-project-filemetadata/" target="_blank" rel="noopener noreferrer nofollow">我们的 Gitpod 初始项目</a>来完成你的项目。
--   使用你选择的网站生成器来完成项目。 需要包含我们 GitHub 仓库的所有文件。
+-   克隆<a href="https://github.com/freeCodeCamp/boilerplate-project-filemetadata/" target="_blank" rel="noopener noreferrer nofollow">此 GitHub 仓库</a>，并在本地完成你的项目。
+-   使用<a href="https://gitpod.io/?autostart=true#https://github.com/freeCodeCamp/boilerplate-project-filemetadata/" target="_blank" rel="noopener noreferrer nofollow">我们的 Gitpod 启动项目</a>来完成你的项目。
+-   使用你选择的网站生成器来完成项目。需要包含我们 GitHub 仓库中的所有文件。
 
 # --instructions--
 
-**HINT:** You can use the `multer` npm package to handle file uploading.
+**提示：** 你可以使用 `multer` npm 包来处理文件上传。
 
 # --hints--
 
-提交自己的项目，而不是示例的 URL。
+请提交你自己的项目，而不是示例的 URL。
 
 ```js
 (getUserInput) => {
@@ -31,7 +31,7 @@ Build a full stack JavaScript app that is functionally similar to this: <a href=
 };
 ```
 
-You can submit a form that includes a file upload.
+你可以提交包含文件上传的表单。
 
 ```js
 async (getUserInput) => {
@@ -42,7 +42,7 @@ async (getUserInput) => {
 };
 ```
 
-The form file input field has the `name` attribute set to `upfile`.
+表单的文件输入字段的 `name` 属性应设置为 `upfile`。
 
 ```js
 async (getUserInput) => {
@@ -53,7 +53,7 @@ async (getUserInput) => {
 };
 ```
 
-When you submit a file, you receive the file `name`, `type`, and `size` in bytes within the JSON response.
+当你提交一个文件时，你会在 JSON 响应中收到该文件的 `name`、`type` 和以字节为单位的 `size`。
 
 ```js
 async (getUserInput) => {
@@ -73,4 +73,3 @@ async (getUserInput) => {
   assert.equal(parsed.type, 'image/png');
 };
 ```
-

@@ -1,6 +1,6 @@
 ---
 id: 67329fbcfaf5ff5cdaa38a42
-title: What Is the var Keyword, and Why Is It No Longer Suggested to Use It?
+title: 什么是 var 关键字，为什么现在不建议使用它？
 challengeType: 11
 videoId: Ae4bq5IcDfI
 dashedName: what-is-the-var-keyword-and-why-is-it-no-longer-suggested-to-use-it
@@ -8,26 +8,26 @@ dashedName: what-is-the-var-keyword-and-why-is-it-no-longer-suggested-to-use-it
 
 # --description--
 
-Watch the video or read the transcript and answer the questions below.
+观看视频或阅读文字稿并回答下列问题。
 
 # --transcript--
 
-What is the `var` keyword and why is it no longer suggested to use it?
+什么是 `var` 关键字，为什么现在不建议使用它？
 
-The `var` keyword in JavaScript is one of the original ways to declare variables. It has been part of the language since its inception and for many years it remained the primary method for creating variables. However as JavaScript evolved and developers gained more experience with the language, certain drawbacks of using `var` became apparent leading to the introduction of `let` and `const` in 2015.
+`var` 关键字是 JavaScript 最早用于声明变量的方法之一。自语言诞生以来，它一直是创建变量的主要方式。然而，随着 JavaScript 的发展以及开发者对该语言的深入了解，使用 `var` 的一些缺点逐渐显现，这也促使了 2015 年 `let` 和 `const` 的引入。
 
-When you declare a variable with `var`, it becomes function-scoped or globally-scoped. This means that if you declare a variable inside a function using `var` it's only accessible within that function. However if you declare it outside any function, it becomes a global variable accessible throughout your entire script. This behavior can sometimes lead to unexpected results and make your code harder to reason about.
+使用 `var` 声明的变量具有函数作用域或全局作用域。这意味着，如果你在函数内部用 `var` 声明变量，它只在该函数内部可访问；如果在任何函数外部声明，则成为全局变量，可在整个脚本中访问。这种行为有时会导致意想不到的结果，使代码难以理解。
 
-A problem with `var` is that it allows you to redeclare the same variable multiple times without throwing an error. This can lead to accidental overwrites and make debugging more difficult.
+`var` 的一个问题是允许在同一作用域内多次声明同名变量而不会报错，这可能导致变量被意外覆盖，增加调试难度。
 
 ```js
 var num = 5;
 
-// This is allowed and doesn't throw an error
+// 这样是允许的，不会报错
 var num = 10;
 ```
 
-The most significant issue with `var` is its lack of block scoping. Variables declared with `var` inside a block like an `if` statement or a `for` loop are still accessible outside that block.
+`var` 最大的问题是它没有块级作用域。用 `var` 在 `if` 语句或 `for` 循环等代码块中声明的变量，在该代码块外依然可以访问。
 
 ```js
 if (true){
@@ -36,47 +36,47 @@ if (true){
 console.log(num); // 5
 ```
 
-This behaviour can lead to unintended variable leaks and make your code more prone to bugs.
+这种行为可能导致变量泄漏，使代码更容易出错。
 
-Due to this issues, modern JavaScript development has largely moved away from `var` in favor of `let` and `const`. These keywords provide block scoping which aligns more closely with how scoping works in many other programming languages.
+由于这些问题，现代 JavaScript 开发基本上已经不再推荐使用 `var`，而是使用 `let` 和 `const`。这两个关键字提供了块级作用域，更符合许多其他编程语言的作用域规则。
 
-They also don't allow redeclaration within the same scope helping to prevent accidental overrides.
+它们也不允许在同一作用域内重复声明变量，有助于防止变量被意外覆盖。
 
-While `var` is still part of JavaScript and works in all browsers, it's generally recommended to use `let` and `const` in modern JavaScript development. They provide clear scoping rules help prevent common pitfalls and make your code's behavior more predictable.
+虽然 `var` 仍然是 JavaScript 的一部分，并且在所有浏览器中都可用，但在现代 JavaScript 开发中，通常建议使用 `let` 和 `const`。它们提供了更清晰的作用域规则，有助于避免常见陷阱，使代码行为更可预测。
 
 # --questions--
 
 ## --text--
 
-What is the scope of a variable declared with `var` outside of any function?
+在函数外部用 `var` 声明的变量的作用域是什么？
 
 ## --answers--
 
-Block scope.
+块级作用域。
 
 ### --feedback--
 
-Think about where a `var` variable declared outside a function can be accessed.
+想一想在函数外用 `var` 声明的变量可以在什么地方被访问。
 
 ---
 
-Function scope.
+函数作用域。
 
 ### --feedback--
 
-Think about where a `var` variable declared outside a function can be accessed.
+想一想在函数外用 `var` 声明的变量可以在什么地方被访问。
 
 ---
 
-Global scope.
+全局作用域。
 
 ---
 
-Module scope.
+模块作用域。
 
 ### --feedback--
 
-Think about where a `var` variable declared outside a function can be accessed.
+想一想在函数外用 `var` 声明的变量可以在什么地方被访问。
 
 ## --video-solution--
 
@@ -84,7 +84,7 @@ Think about where a `var` variable declared outside a function can be accessed.
 
 ## --text--
 
-What will be the output of the following code?
+下面代码的输出是什么？
 
 ```js
 var x = 10;
@@ -106,7 +106,7 @@ console.log(x);
 
 ### --feedback--
 
-Remember that `var` is function-scoped or globally-scoped, and it allows redeclaration within the same scope.
+记住 `var` 是函数作用域或全局作用域，并且允许在同一作用域内重复声明。
 
 ---
 
@@ -124,7 +124,7 @@ Remember that `var` is function-scoped or globally-scoped, and it allows redecla
 
 ### --feedback--
 
-Remember that `var` is function-scoped or globally-scoped, and it allows redeclaration within the same scope.
+记住 `var` 是函数作用域或全局作用域，并且允许在同一作用域内重复声明。
 
 ---
 
@@ -135,7 +135,7 @@ Remember that `var` is function-scoped or globally-scoped, and it allows redecla
 
 ### --feedback--
 
-Remember that `var` is function-scoped or globally-scoped, and it allows redeclaration within the same scope.
+记住 `var` 是函数作用域或全局作用域，并且允许在同一作用域内重复声明。
 
 ## --video-solution--
 
@@ -143,36 +143,37 @@ Remember that `var` is function-scoped or globally-scoped, and it allows redecla
 
 ## --text--
 
-Which of the following is NOT a reason to avoid using `var` in modern JavaScript?
+以下哪一项不是在现代 JavaScript 中避免使用 `var` 的原因？
 
 ## --answers--
 
-`var` allows redeclaration of variables in the same scope.
+`var` 允许在同一作用域内重复声明变量。
 
 ### --feedback--
 
-Consider which statement is false about `var`'s behavior or support.
+考虑哪一项说法是关于 `var` 行为或支持的错误陈述。
 
 ---
 
-`var` is not supported in modern browsers.
+现代浏览器不支持 `var`。
 
 ---
 
-`var` variables are function-scoped, not block-scoped.
+`var` 声明的变量是函数作用域而不是块级作用域。
 
 ### --feedback--
 
-Consider which statement is false about `var`'s behavior or support.
+考虑哪一项说法是关于 `var` 行为或支持的错误陈述。
 
 ---
 
-`var` variables are hoisted.
+`var` 声明的变量会被提升（hoisting）。
 
 ### --feedback--
 
-Consider which statement is false about `var`'s behavior or support.
+考虑哪一项说法是关于 `var` 行为或支持的错误陈述。
 
 ## --video-solution--
 
 2
+
