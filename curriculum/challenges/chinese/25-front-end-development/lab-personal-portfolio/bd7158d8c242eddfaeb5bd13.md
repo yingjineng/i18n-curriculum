@@ -154,7 +154,7 @@ assert.isTrue(cssCheck.length > 0 || htmlSourceAttr.length > 0);
 
 ```html
 <!doctype html>
-<html lang="zh">
+<html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
     <title>个人作品集</title>

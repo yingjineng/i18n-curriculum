@@ -1,13 +1,13 @@
 ---
 id: 66edcccbba6dacdb65a59067
-title: JavaScript Arrays Quiz
+title: JavaScript 数组测验
 challengeType: 8
 dashedName: quiz-javascript-arrays
 ---
 
 # --description--
 
-To pass the quiz, you must correctly answer at least 18 of the 20 questions below.
+要通过本测验，你必须正确回答以下 20 道题中的至少 18 道。
 
 # --quizzes--
 
@@ -17,7 +17,7 @@ To pass the quiz, you must correctly answer at least 18 of the 20 questions belo
 
 #### --text--
 
-What will be the output for the following code?
+以下代码的输出是什么？
 
 ```js
 const numbers = [1, 2, 3];
@@ -44,7 +44,7 @@ console.log(numbers[10]);
 
 #### --text--
 
-Which of the following is the correct way access the string `"Jessica"` from the `developers` array?
+以下哪种方式可以正确地从 `developers` 数组中访问字符串 `"Jessica"`？
 
 #### --distractors--
 
@@ -78,7 +78,7 @@ developers[0]
 
 #### --text--
 
-What value will be assigned to the `index` variable?
+`index` 变量将被赋予什么值？
 
 ```js
 const numbers = [10, 20, 30, 40];
@@ -106,51 +106,51 @@ console.log(index);
 
 #### --text--
 
-What does the rest syntax do?
+剩余语法（rest syntax）是做什么用的？
 
 #### --distractors--
 
-It is used to divide a string into an array of substrings.
+用于将字符串分割为子字符串数组。
 
 ---
 
-It is used to add or remove elements from any position in an array.
+用于在数组的任意位置添加或删除元素。
 
 ---
 
-It is used to add elements to the end of the array and will return the new length.
+用于向数组末尾添加元素，并返回新的长度。
 
 #### --answer--
 
-It captures the remaining elements of an array into a new array.
+用于将数组中的剩余元素收集到一个新数组中。
 
 ### --question--
 
 #### --text--
 
-What is array destructuring?
+什么是数组解构（array destructuring）？
 
 #### --distractors--
 
-It is used to concatenate all of the elements of an array into a single string.
+用于将数组的所有元素连接成一个字符串。
 
 ---
 
-It is used to check if an array contains a specific value.
+用于检查数组是否包含特定值。
 
 ---
 
-It is used to remove the last element from an array and will return that removed element.
+用于移除数组的最后一个元素，并返回被移除的元素。
 
 #### --answer--
 
-It is used to extract values from arrays and assign them to variables in a more concise and readable way.
+用于从数组中提取值并以更简洁、可读的方式赋值给变量。
 
 ### --question--
 
 #### --text--
 
-What value will be assigned to the `arr2` variable?
+`arr2` 变量将被赋予什么值？
 
 ```js
 const arr1 = [1, 2, 3];
@@ -178,7 +178,7 @@ console.log(arr2);
 
 #### --text--
 
-What will this code log to the console?
+以下代码会在控制台输出什么？
 
 ```js
 const colors = ["red", "blue", "green", "yellow"];
@@ -206,7 +206,7 @@ console.log(colors);
 
 #### --text--
 
-What value will be assigned to the `slicedArr` variable?
+`slicedArr` 变量将被赋予什么值？
 
 ```js
 const arr = ["apple", "banana", "cherry", "date"];
@@ -234,7 +234,7 @@ console.log(slicedArr);
 
 #### --text--
 
-Which method returns the first index of a given element in an array?
+哪个方法返回数组中给定元素的第一个索引？
 
 #### --distractors--
 
@@ -256,7 +256,7 @@ Which method returns the first index of a given element in an array?
 
 #### --text--
 
-Which method is used to remove the first element from an array and returns that removed element?
+哪个方法用于移除数组的第一个元素，并返回被移除的元素？
 
 #### --distractors--
 
@@ -278,29 +278,29 @@ Which method is used to remove the first element from an array and returns that 
 
 #### --text--
 
-What does the `concat()` method do?
+`concat()` 方法的作用是什么？
 
 #### --distractors--
 
-Joins array elements into a string.
+将数组元素连接成一个字符串。
 
 ---
 
-Adds an element to the beginning of an array.
+向数组开头添加一个元素。
 
 ---
 
-Removes an element from the array.
+从数组中移除一个元素。
 
 #### --answer--
 
-Merges two arrays into a new array.
+将两个数组合并为一个新数组。
 
 ### --question--
 
 #### --text--
 
-What will be the output of this code?
+以下代码的输出是什么？
 
 ```js
 const fruits = ["apple", "banana", "cherry", "apple", "orange"];
@@ -330,29 +330,29 @@ console.log(fruits);
 
 #### --text--
 
-What does the `includes()` method do?
+`includes()` 方法的作用是什么？
 
 #### --distractors--
 
-It is used to divide a string into an array of substrings.
+用于将字符串分割为子字符串数组。
 
 ---
 
-It is used to concatenate all of the elements of an array into a single string.
+用于将数组的所有元素连接成一个字符串。
 
 ---
 
-It is used to add or remove elements from any position in an array.
+用于在数组的任意位置添加或删除元素。
 
 #### --answer--
 
-It is used to check if an array contains a specific value.
+用于检查数组是否包含特定值。
 
 ### --question--
 
 #### --text--
 
-Which of the following methods is used to reverse an array in place?
+以下哪个方法用于原地反转数组？
 
 #### --distractors--
 
@@ -374,51 +374,51 @@ Which of the following methods is used to reverse an array in place?
 
 #### --text--
 
-What is a two dimensional array?
+什么是二维数组？
 
 #### --distractors--
 
-An array that only contains object literals.
+只包含对象字面量的数组。
 
 ---
 
-An array of fixed length.
+长度固定的数组。
 
 ---
 
-An array of floating point numbers.
+浮点数数组。
 
 #### --answer--
 
-An array of arrays.
+数组的数组。
 
 ### --question--
 
 #### --text--
 
-Which of the following is true about the `indexOf()` method in arrays?
+关于数组的 `indexOf()` 方法，以下哪项是正确的？
 
 #### --distractors--
 
-It always returns the last occurrence of the element.
+它总是返回元素的最后一次出现。
 
 ---
 
-It throws an error if the element is not found.
+如果找不到元素会抛出错误。
 
 ---
 
-It requires the array to be sorted.
+要求数组必须排序。
 
 #### --answer--
 
-It returns `-1` if the element is not found.
+如果找不到元素，则返回 `-1`。
 
 ### --question--
 
 #### --text--
 
-Which of the following is NOT an array method?
+以下哪一个不是数组方法？
 
 #### --distractors--
 
@@ -440,7 +440,7 @@ Which of the following is NOT an array method?
 
 #### --text--
 
-What will be the output for the following code?
+以下代码的输出是什么？
 
 ```js
 const arr = ["o", "l", "l", "e", "h"];
@@ -467,8 +467,7 @@ console.log(arr.join(""));
 
 #### --text--
 
-What will be the result of using the `shift()` method on an empty array?
-
+对空数组使用 `shift()` 方法会得到什么结果？
 
 #### --distractors--
 
@@ -490,7 +489,7 @@ What will be the result of using the `shift()` method on an empty array?
 
 #### --text--
 
-Which method will return a new array without changing the original array?
+哪个方法会返回一个新数组，而不会改变原数组？
 
 #### --distractors--
 

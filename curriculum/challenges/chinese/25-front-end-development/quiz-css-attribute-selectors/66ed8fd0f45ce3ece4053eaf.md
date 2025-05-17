@@ -1,13 +1,13 @@
 ---
 id: 66ed8fd0f45ce3ece4053eaf
-title: CSS Attribute Selectors Quiz
+title: CSS 属性选择器测验
 challengeType: 8
 dashedName: quiz-css-attribute-selectors
 ---
 
 # --description--
 
-To pass the quiz, you must correctly answer at least 9 of the 10 questions below.
+要通过本测验，你必须正确回答下面 10 道题中的至少 9 道。
 
 # --quizzes--
 
@@ -17,29 +17,29 @@ To pass the quiz, you must correctly answer at least 9 of the 10 questions below
 
 #### --text--
 
-What are CSS attribute selectors used for?
+CSS 属性选择器用于做什么？
 
 #### --distractors--
 
-To apply styles to elements based on their tag name.
+根据元素的标签名应用样式。
 
 ---
 
-To apply styles to elements based on their class name.
+根据元素的类名应用样式。
 
 ---
 
-To apply styles to elements based on their parent element.
+根据元素的父元素应用样式。
 
 #### --answer--
 
-To apply styles to elements based on their attributes.
+根据元素的属性应用样式。
 
 ### --question--
 
 #### --text--
 
-Which of the following will NOT be selected by this CSS selector?
+以下哪一个不会被这个 CSS 选择器选中？
 
 ```css
 [title~="flower"] {
@@ -75,7 +75,7 @@ Which of the following will NOT be selected by this CSS selector?
 
 #### --text--
 
-Which CSS selector matches all `p` elements with a `lang` attribute set to `"fr"`?
+以下哪个 CSS 选择器可以选中所有 `lang` 属性为 `"fr"` 的 `p` 元素？
 
 #### --distractors--
 
@@ -105,7 +105,7 @@ p[lang="fr"] { color: blue; }
 
 #### --text--
 
-Which CSS selector matches all `a` elements with an `href` attribute?
+哪个 CSS 选择器可以选中所有带有 `href` 属性的 `a` 元素？
 
 #### --distractors--
 
@@ -135,7 +135,7 @@ a[href] { color: blue; }
 
 #### --text--
 
-Which CSS selector matches all ordered lists with uppercase Roman numerals?
+哪个 CSS 选择器可以选中所有使用大写罗马数字编号的有序列表？
 
 #### --distractors--
 
@@ -165,29 +165,29 @@ ol[type="I"] { border-color: black; }
 
 #### --text--
 
-What is the `data-lang` attribute commonly used for?
+`data-lang` 属性通常用于什么？
 
 #### --distractors--
 
-To specify the language of the document.
+指定文档的语言。
 
 ---
 
-To define the character encoding of the document.
+定义文档的字符编码。
 
 ---
 
-To set the language of an element based on its parent element.
+根据父元素设置元素的语言。
 
 #### --answer--
 
-To apply styles to elements based on this custom data attribute.
+根据这个自定义数据属性为元素应用样式。
 
 ### --question--
 
 #### --text--
 
-Which CSS selector should you use to style `img` elements only if their `alt` attribute is equal to `"code"`?
+如果只想为 `alt` 属性等于 `"code"` 的 `img` 元素设置样式，应该使用哪个 CSS 选择器？
 
 #### --distractors--
 
@@ -217,7 +217,7 @@ img[alt="code"] { border: 1px solid red; }
 
 #### --text--
 
-Which CSS selector matches ordered lists with a numerical numbering type?
+哪个 CSS 选择器可以选中数字编号类型的有序列表？
 
 #### --distractors--
 
@@ -247,7 +247,7 @@ ol[type="1"] { color: purple; }
 
 #### --text--
 
-Which of the following CSS selectors would you use to style `a` elements with both `href` and `title` attributes?
+以下哪个 CSS 选择器可以选中同时拥有 `href` 和 `title` 属性的 `a` 元素？
 
 #### --distractors--
 
@@ -277,7 +277,7 @@ a[href][title] { text-decoration: underline dotted; }
 
 #### --text--
 
-Which CSS selector would you use if you are developing a website for a restaurant and want to style all elements with the `menu-item` class that have a `data-special` attribute?
+如果你正在为一家餐厅开发网站，并希望为所有带有 `menu-item` 类且有 `data-special` 属性的元素设置样式，应该使用哪个 CSS 选择器？
 
 #### --distractors--
 

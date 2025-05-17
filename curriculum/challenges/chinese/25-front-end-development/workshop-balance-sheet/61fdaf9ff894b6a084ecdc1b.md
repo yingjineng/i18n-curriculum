@@ -1,17 +1,17 @@
 ---
 id: 61fdaf9ff894b6a084ecdc1b
-title: Step 33
+title: 步骤 33
 challengeType: 0
 dashedName: step-33
 ---
 
 # --description--
 
-To prevent the text content from overflowing, give your `span[class~="sr-only"]` selector an `overflow` property set to `hidden` and a `white-space` property set to `nowrap`.
+为防止文本内容溢出，请为 `span[class~="sr-only"]` 选择器指定一个 `overflow` 属性，值为 `hidden`，以及一个 `white-space` 属性，值为 `nowrap`。
 
 # --hints--
 
-Your `span[class~="sr-only"]` selector should have an `overflow` property set to `hidden`.
+`span[class~="sr-only"]` 选择器应具有 `overflow` 属性，其值为 `hidden`。
 
 ```js
 assert.strictEqual(
@@ -22,7 +22,7 @@ assert.strictEqual(
 );
 ```
 
-Your `span[class~="sr-only"]` selector should have a `white-space` property set to `nowrap`.
+`span[class~="sr-only"]` 选择器应具有 `white-space` 属性，其值为 `nowrap`。
 
 ```js
 assert.strictEqual(

@@ -1,6 +1,6 @@
 ---
 id: 672bbeaa5afdc5a98d5ab8ff
-title: What Are Examples of Location Pseudo-classes?
+title: 位置伪类有哪些示例？
 challengeType: 11
 videoId: i-J4xVUGY5c
 dashedName: what-are-examples-of-location-pseudo-classes
@@ -8,15 +8,15 @@ dashedName: what-are-examples-of-location-pseudo-classes
 
 # --description--
 
-Watch the video or read the transcript and answer the questions below.
+观看视频或阅读文字稿，并回答下方问题。
 
 # --transcript--
 
-What are examples of location pseudo-classes?
+位置伪类有哪些示例？
 
-Location pseudo-classes are used for styling links and elements that are targeted within the current document. They offer a way to apply styles based on whether a link is visited or whether an element is currently in focus.
+位置伪类用于为链接和当前文档中被定位的元素设置样式。它们可以根据链接是否被访问或元素是否处于焦点来应用不同的样式。
 
-Examples of location pseudo-classes are:
+常见的定位伪类有：
 
 - `:link`
 - `:visited`
@@ -25,9 +25,9 @@ Examples of location pseudo-classes are:
 - `:target`
 - `:target-within`
 
-Let's take a deeper look at each of these pseudo-classes.
+下面我们来详细了解这些伪类。
 
-The `:link` pseudo-class allows you to target all unvisited links on a webpage. You can use it to style links differently before the user clicks on them. For example, you might want to make all unvisited links blue or your website's primary color:
+`:link` 伪类用于选中所有未被访问过的链接。你可以用它来为用户尚未点击的链接设置不同的样式。例如，你可能希望所有未访问的链接显示为蓝色或你网站的主色：
 
 ```css
 a:link {
@@ -35,9 +35,9 @@ a:link {
 }
 ```
 
-In this case, any link the user hasn't clicked yet will appear magenta. Once the user clicks the link, the `:link` style no longer applies, and the `:visited` pseudo-class takes over. The `:visited` pseudo-class comes into play after the user clicks the link, so you can use it to target links the user has already clicked.
+在这个例子中，用户尚未点击的链接会显示为洋红色。一旦用户点击了链接，`:link` 样式就不再应用，`:visited` 伪类就会生效。`:visited` 伪类用于选中用户已经访问过的链接。
 
-Here is an example of changing the visited link state to the color `purple`:
+下面是将已访问链接颜色改为紫色的示例：
 
 ```css
 a:visited {
@@ -45,11 +45,11 @@ a:visited {
 }
 ```
 
-The `:visited` pseudo-class helps users distinguish between links they have visited and those they have not.
+`:visited` 伪类有助于用户区分已访问和未访问的链接。
 
-The `:any-link` pseudo-class is a combination of the `:link` and `:visited` pseudo-classes. So it matches any anchor element with an `href` attribute, regardless of whether it's visited or not.
+`:any-link` 伪类是 `:link` 和 `:visited` 的组合。它匹配所有带有 `href` 属性的锚点元素，无论是否被访问过。
 
-Here is an example of changing the link color for the `:any-link` pseudo-class to `crimson`:
+下面是将 `:any-link` 伪类的链接颜色设置为深红色的示例：
 
 ```css
 a:any-link {
@@ -57,32 +57,32 @@ a:any-link {
 }
 ```
 
-The `:local-link` pseudo-class targets links that point to the same document. It can be useful when you want to differentiate internal links from external ones. Currently, no browser supports the `:local-link` pseudo-class.
+`:local-link` 伪类用于选中指向同一文档的链接。当你想区分内部链接和外部链接时会很有用。但目前没有浏览器支持 `:local-link` 伪类。
 
-The `:target` pseudo-class selects an element that matches the current URL fragment identifier, for example, `#section1`. It's very useful for pages with in-page navigation.
+`:target` 伪类选中与当前 URL 片段标识符（如 `#section1`）匹配的元素。它在页面内导航时非常有用。
 
-Here's an HTML example that represents an in-page navigation:
+下面是一个页面内导航的 HTML 示例：
 
 ```html
 <nav id="table-of-contents">
   <ul>
-    <li><a href="#section1">Introduction</a></li>
-    <li><a href="#section2">Features</a></li>
+    <li><a href="#section1">介绍</a></li>
+    <li><a href="#section2">功能</a></li>
   </ul>
 </nav>
 
 <section id="section1">
-  <h2>Introduction</h2>
-  <p>This is the introduction section.</p>
+  <h2>介绍</h2>
+  <p>这是介绍部分。</p>
 </section>
 
 <section id="section2">
-  <h2>Features</h2>
-  <p>This section describes the features.</p>
+  <h2>功能</h2>
+  <p>本节描述功能。</p>
 </section>
 ```
 
-Here's the CSS that uses the `:target` pseudo-class to style the section that matches where the user navigates to:
+下面是使用 `:target` 伪类为被导航到的 section 设置样式的 CSS：
 
 ```css
 section:target {
@@ -92,13 +92,13 @@ section:target {
 }
 ```
 
-When the user clicks on one of the navigation links, the background color for that respective section will change to green.
+当用户点击导航链接时，相应的 section 背景色会变为绿色。
 
 # --questions--
 
 ## --text--
 
-Which pseudo-class allows you to style an element that matches the current URL fragment identifier, such as `#section1`?
+哪个伪类可以让你为与当前 URL 片段标识符（如 `#section1`）匹配的元素设置样式？
 
 ## --answers--
 
@@ -106,7 +106,7 @@ Which pseudo-class allows you to style an element that matches the current URL f
 
 ### --feedback--
 
-Think about how you can highlight a specific section when navigating through in-page links.
+想一想如何在页面内导航时高亮显示特定部分。
 
 ---
 
@@ -114,7 +114,7 @@ Think about how you can highlight a specific section when navigating through in-
 
 ### --feedback--
 
-Think about how you can highlight a specific section when navigating through in-page links.
+想一想如何在页面内导航时高亮显示特定部分。
 
 ---
 
@@ -126,7 +126,7 @@ Think about how you can highlight a specific section when navigating through in-
 
 ### --feedback--
 
-Think about how you can highlight a specific section when navigating through in-page links.
+想一想如何在页面内导航时高亮显示特定部分。
 
 ## --video-solution--
 
@@ -134,35 +134,35 @@ Think about how you can highlight a specific section when navigating through in-
 
 ## --text--
 
-When are location pseudo-classes particularly useful?
+位置伪类在什么时候特别有用？
 
 ## --answers--
 
-When styling elements based on their sibling relationships.
+当根据元素的兄弟关系设置样式时。
 
 ### --feedback--
 
-Think about how you can style links and targeted elements depending on user interaction.
+想一想如何根据用户的交互来为链接和被定位的元素设置样式。
 
 ---
 
-When applying styles based on whether a link is visited or an element is currently in focus.
+当根据链接是否被访问或元素是否处于焦点来应用样式时。
 
 ---
 
-When styling elements based on their parent element's attributes.
+当根据父元素的属性为元素设置样式时。
 
 ### --feedback--
 
-Think about how you can style links and targeted elements depending on user interaction.
+想一想如何根据用户的交互来为链接和被定位的元素设置样式。
 
 ---
 
-When adjusting the layout of a webpage dynamically.
+当动态调整网页布局时。
 
 ### --feedback--
 
-Think about how you can style links and targeted elements depending on user interaction.
+想一想如何根据用户的交互来为链接和被定位的元素设置样式。
 
 ## --video-solution--
 
@@ -170,7 +170,7 @@ Think about how you can style links and targeted elements depending on user inte
 
 ## --text--
 
-Which pseudo-class is designed to target links that point to the same document but is not currently supported by any browser?
+哪个伪类用于选中指向同一文档的链接，但目前没有任何浏览器支持？
 
 ## --answers--
 
@@ -178,7 +178,7 @@ Which pseudo-class is designed to target links that point to the same document b
 
 ### --feedback--
 
-Consider the pseudo-class intended for distinguishing internal links from external ones, even though it's not yet supported.
+请考虑那个用于区分内部链接和外部链接但尚未被支持的伪类。
 
 ---
 
@@ -190,7 +190,7 @@ Consider the pseudo-class intended for distinguishing internal links from extern
 
 ### --feedback--
 
-Consider the pseudo-class intended for distinguishing internal links from external ones, even though it's not yet supported.
+请考虑那个用于区分内部链接和外部链接但尚未被支持的伪类。
 
 ---
 
@@ -198,8 +198,9 @@ Consider the pseudo-class intended for distinguishing internal links from extern
 
 ### --feedback--
 
-Consider the pseudo-class intended for distinguishing internal links from external ones, even though it's not yet supported.
+请考虑那个用于区分内部链接和外部链接但尚未被支持的伪类。
 
 ## --video-solution--
 
 2
+

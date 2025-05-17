@@ -1,13 +1,13 @@
 ---
 id: 66ed8fc9f45ce3ece4053eae
-title: CSS Animations Quiz
+title: CSS 动画测验
 challengeType: 8
 dashedName: quiz-css-animations
 ---
 
 # --description--
 
-To pass the quiz, you must correctly answer at least 18 of the 20 questions below.
+要通过本测验，你必须正确回答以下 20 道题中的至少 18 道。
 
 # --quizzes--
 
@@ -17,51 +17,51 @@ To pass the quiz, you must correctly answer at least 18 of the 20 questions belo
 
 #### --text--
 
-What is the purpose of the `transform` property in CSS?
+CSS 中 `transform` 属性的作用是什么？
 
 #### --distractors--
 
-To change the visibility of an element.
+改变元素的可见性。
 
 ---
 
-To apply a visual effect to text.
+为文本应用视觉效果。
 
 ---
 
-To set the dimensions of an element.
+设置元素的尺寸。
 
 #### --answer--
 
-To modify the position, size, and shape of an element.
+修改元素的位置、大小和形状。
 
 ### --question--
 
 #### --text--
 
-How does the CSS `animation-direction` property affect an animation?
+CSS 的 `animation-direction` 属性如何影响动画？
 
 #### --distractors--
 
-It specifies if an animation should be repeated.
+它指定动画是否应被重复。
 
 ---
 
-It sets the duration of the animation.
+它设置动画的持续时间。
 
 ---
 
-It defines the speed of the animation.
+它定义动画的速度。
 
 #### --answer--
 
-It defines how an animation should play.
+它定义动画的播放方式。
 
 ### --question--
 
 #### --text--
 
-Which CSS property makes an animation run 3 times?
+哪个 CSS 属性可以让动画运行 3 次？
 
 #### --distractors--
 
@@ -83,7 +83,7 @@ Which CSS property makes an animation run 3 times?
 
 #### --text--
 
-Which CSS timing function makes an animation run at a consistent speed from start to end?
+哪种 CSS 时间函数让动画从开始到结束以一致的速度运行？
 
 #### --distractors--
 
@@ -105,95 +105,95 @@ Which CSS timing function makes an animation run at a consistent speed from star
 
 #### --text--
 
-What does the `@keyframes` at-rule define in CSS?
+CSS 中 `@keyframes` 规则定义了什么？
 
 #### --distractors--
 
-The colors of a CSS gradient.
+CSS 渐变的颜色。
 
 ---
 
-The angles of a CSS rotation.
+CSS 旋转的角度。
 
 ---
 
-The dimensions of an element.
+元素的尺寸。
 
 #### --answer--
 
-The stages of a CSS animation.
+CSS 动画的各个阶段。
 
 ### --question--
 
 #### --text--
 
-What is the purpose of the `translateX()` function in CSS?
+CSS 中 `translateX()` 函数的作用是什么？
 
 #### --distractors--
 
-It changes the opacity of the element.
+它改变元素的不透明度。
 
 ---
 
-It rotates the element.
+它旋转元素。
 
 ---
 
-It repositions the element vertically.
+它垂直重新定位元素。
 
 #### --answer--
 
-It repositions the element horizontally.
+它水平重新定位元素。
 
 ### --question--
 
 #### --text--
 
-Which of the following is NOT a potential concern with CSS animations?
+以下哪项不是 CSS 动画可能带来的问题？
 
 #### --distractors--
 
-They may cause discomfort or physical harm to certain users.
+它们可能会对某些用户造成不适或身体伤害。
 
 ---
 
-Users may find them distracting.
+用户可能会觉得它们分散注意力。
 
 ---
 
-Overuse can lead to poor performance.
+过度使用会导致性能下降。
 
 #### --answer--
 
-They can enhance user experience.
+它们可以提升用户体验。
 
 ### --question--
 
 #### --text--
 
-Where is the `@keyframes` at-rule defined?
+`@keyframes` 规则应定义在哪里？
 
 #### --distractors--
 
-Within the `body` element of an HTML file.
+在 HTML 文件的 `body` 元素内。
 
 ---
 
-Within the `head` element of an HTML file.
+在 HTML 文件的 `head` 元素内。
 
 ---
 
-Within a CSS class definition.
+在 CSS 类定义内。
 
 #### --answer--
 
-At the top level, outside of any CSS selectors.
+在顶层，位于任何 CSS 选择器之外。
 
 ### --question--
 
 #### --text--
 
-Which CSS property allows you to pause and resume an animation?
+哪个 CSS 属性可以让你暂停和恢复动画？
 
 #### --distractors--
 
@@ -215,29 +215,29 @@ Which CSS property allows you to pause and resume an animation?
 
 #### --text--
 
-What value should be assigned to the `animation-name` property in CSS?
+CSS 中 `animation-name` 属性应该赋予什么值？
 
 #### --distractors--
 
-The duration of the animation in seconds.
+动画的持续时间（秒）。
 
 ---
 
-The timing function used for the animation.
+动画使用的时间函数。
 
 ---
 
-The delay before the animation starts in seconds.
+动画开始前的延迟时间（秒）。
 
 #### --answer--
 
-The name of the animation defined by the `@keyframes`.
+由 `@keyframes` 定义的动画名称。
 
 ### --question--
 
 #### --text--
 
-What does this `@keyframe` at-rule do to the animated element?
+下面这个 `@keyframe` 规则会对动画元素做什么？
 
 ```css
 @keyframes animation {
@@ -252,25 +252,25 @@ What does this `@keyframe` at-rule do to the animated element?
 
 #### --distractors--
 
-It rotates the element 90 degrees clockwise.
+将元素顺时针旋转 90 度。
 
 ---
 
-It changes the color of the element to blue.
+将元素颜色变为蓝色。
 
 ---
 
-It scales the element to 50% of its initial size and then to 100% of its initial size.
+将元素缩放到初始大小的 50%，然后再变为 100%。
 
 #### --answer--
 
-It moves the element horizontally from -50px to 100px, relative to its starting point.
+将元素从 -50px 水平移动到 100px，相对于其起始点。
 
 ### --question--
 
 #### --text--
 
-Which CSS property defines how an animation progresses over time?
+哪个 CSS 属性定义了动画随时间的进展方式？
 
 #### --distractors--
 
@@ -292,7 +292,7 @@ Which CSS property defines how an animation progresses over time?
 
 #### --text--
 
-Which CSS property is used to specify that an animation should take 5 seconds to complete?
+哪个 CSS 属性用于指定动画应在 5 秒内完成？
 
 #### --distractors--
 
@@ -322,7 +322,7 @@ animation-duration: 5s;
 
 #### --text--
 
-What does `50%` represent in the following CSS `@keyframe` at-rule?
+在以下 CSS `@keyframe` 规则中，`50%` 代表什么？
 
 ```css
 @keyframes animation {
@@ -340,69 +340,69 @@ What does `50%` represent in the following CSS `@keyframe` at-rule?
 
 #### --distractors--
 
-The starting point of the animation.
+动画的起点。
 
 ---
 
-The ending point of the animation.
+动画的终点。
 
 ---
 
-The speed of the animation.
+动画的速度。
 
 #### --answer--
 
-The halfway point of the animation.
+动画的中间点。
 
 ### --question--
 
 #### --text--
 
-What will happen when the property `transform: translateX(200px);` is applied?
+当应用 `transform: translateX(200px);` 属性时会发生什么？
 
 #### --distractors--
 
-The element will move 200px to the left.
+元素会向左移动 200px。
 
 ---
 
-The element will move 200px to the bottom.
+元素会向下移动 200px。
 
 ---
 
-The element will rotate 200 degrees clockwise.
+元素会顺时针旋转 200 度。
 
 #### --answer--
 
-The element will move 200px to the right.
+元素会向右移动 200px。
 
 ### --question--
 
 #### --text--
 
-How will the animation behave if `animation-iteration-count` is set to `infinite`?
+如果 `animation-iteration-count` 设置为 `infinite`，动画会如何表现？
 
 #### --distractors--
 
-It will run once and stop.
+动画运行一次后停止。
 
 ---
 
-It will pause after the first iteration.
+第一次循环后暂停。
 
 ---
 
-It will stop after three iterations.
+三次循环后停止。
 
 #### --answer--
 
-It will repeat indefinitely.
+动画会无限循环。
 
 ### --question--
 
 #### --text--
 
-Which `@keyframes` selector specifies the starting point of an animation?
+哪个 `@keyframes` 选择器指定动画的起点？
 
 #### --distractors--
 
@@ -424,29 +424,29 @@ Which `@keyframes` selector specifies the starting point of an animation?
 
 #### --text--
 
-What properties can be specified using the `animation` shorthand CSS property?
+使用 `animation` 简写属性可以指定哪些动画属性？
 
 #### --distractors--
 
-Only the name of the animation.
+只能指定动画名称。
 
 ---
 
-The name and duration of the animation.
+动画名称和持续时间。
 
 ---
 
-The name, duration, and delay of the animation.
+动画名称、持续时间和延迟。
 
 #### --answer--
 
-All animation properties.
+所有动画属性。
 
 ### --question--
 
 #### --text--
 
-Which CSS property is used to apply an animation defined by an `@keyframes` at-rule?
+哪个 CSS 属性用于应用由 `@keyframes` 定义的动画？
 
 #### --distractors--
 
@@ -468,7 +468,7 @@ Which CSS property is used to apply an animation defined by an `@keyframes` at-r
 
 #### --text--
 
-Which CSS property allows you to set a time before the animation begins?
+哪个 CSS 属性可以设置动画开始前的延迟时间？
 
 #### --distractors--
 

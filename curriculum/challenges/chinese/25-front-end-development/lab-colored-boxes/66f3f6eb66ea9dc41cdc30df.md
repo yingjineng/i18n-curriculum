@@ -121,7 +121,7 @@ assert.isNotEmpty(new __helpers.CSSHelp(document).getStyle('.color5')?.getPropVa
 
 ```html
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
 <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -141,7 +141,7 @@ assert.isNotEmpty(new __helpers.CSSHelp(document).getStyle('.color5')?.getPropVa
 
 ```html
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
 <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">

@@ -1,6 +1,6 @@
 ---
 id: 67d2ff6f069dce9feacb7d25
-title: What Is Compatibility Testing?
+title: 什么是兼容性测试？
 challengeType: 11
 videoId: nVAaxZ34khk
 dashedName: what-is-compatibility-testing
@@ -8,26 +8,27 @@ dashedName: what-is-compatibility-testing
 
 # --description--
 
-Watch the lecture video and answer the questions below.
+观看讲座视频并回答以下问题。
 
 # --questions--
 
 ## --text--
 
-What Is Compatibility Testing? question?
+什么是兼容性测试？
 
 ## --answers--
 
-Answer 1
+答案 1
 
 ---
 
-Answer 2
+答案 2
 
 ---
 
-Answer 3
+答案 3
 
 ## --video-solution--
 
 1
+

@@ -1,13 +1,13 @@
 ---
 id: 66edc31c44f1b9c1d5c5ebca
-title: JavaScript Strings Quiz
+title: JavaScript 字符串测验
 challengeType: 8
 dashedName: quiz-javascript-strings
 ---
 
 # --description--
 
-To pass the quiz, you must correctly answer at least 18 of the 20 questions below.
+要通过本测验，你必须正确回答以下 20 道题中的至少 18 道。
 
 # --quizzes--
 
@@ -17,29 +17,29 @@ To pass the quiz, you must correctly answer at least 18 of the 20 questions belo
 
 #### --text--
 
-What is the return value for the `includes()` method?
+`includes()` 方法的返回值是什么？
 
 #### --distractors--
 
-If the substring is found within the string, the method returns the string. Otherwise, it returns `undefined`.
+如果子字符串在字符串中被找到，该方法返回字符串。否则，返回 `undefined`。
 
 ---
 
-If the substring is found within the string, the method returns `true`. Otherwise, it returns an empty string.
+如果子字符串在字符串中被找到，该方法返回 `true`。否则，返回空字符串。
 
 ---
 
-If the substring is found within the string, the method returns the string. Otherwise, it returns `null`.
+如果子字符串在字符串中被找到，该方法返回字符串。否则，返回 `null`。
 
 #### --answer--
 
-If the substring is found within the string, the method returns `true`. Otherwise, it returns `false`.
+如果子字符串在字符串中被找到，该方法返回 `true`。否则，返回 `false`。
 
 ### --question--
 
 #### --text--
 
-Which option demonstrates string interpolation?
+下列哪一项演示了字符串插值？
 
 #### --distractors--
 
@@ -61,7 +61,7 @@ Which option demonstrates string interpolation?
 
 #### --text--
 
-Which of the following options is the newline character?
+下列哪一项是换行符？
 
 #### --distractors--
 
@@ -83,51 +83,51 @@ Which of the following options is the newline character?
 
 #### --text--
 
-Which of the following statements is correct about strings?
+关于字符串，下列哪项说法是正确的？
 
 #### --distractors--
 
-Strings are mutable and can be changed after they are created.
+字符串是可变的，创建后可以更改。
 
 ---
 
-Strings are non primitive data types.
+字符串是非原始数据类型。
 
 ---
 
-Strings can only be created using single quotes.
+字符串只能用单引号创建。
 
 #### --answer--
 
-Strings are immutable.
+字符串是不可变的。
 
 ### --question--
 
 #### --text--
 
-What does ASCII stand for?
+ASCII 代表什么？
 
 #### --distractors--
 
-American Standard Code for Internet Information
+American Standard Code for Internet Information（美国互联网信息标准代码）
 
 ---
 
-Advanced Systematic Code for Internal Interchange
+Advanced Systematic Code for Internal Interchange（高级系统内部交换代码）
 
 ---
 
-Automatic Standard Code for Internal Information
+Automatic Standard Code for Internal Information（自动标准内部信息代码）
 
 #### --answer--
 
-American Standard Code for Information Interchange
+American Standard Code for Information Interchange（美国信息交换标准代码）
 
 ### --question--
 
 #### --text--
 
-Which of the following methods extracts a portion of a string and returns a new string?
+下列哪个方法可以提取字符串的一部分并返回一个新字符串？
 
 #### --distractors--
 
@@ -149,29 +149,29 @@ Which of the following methods extracts a portion of a string and returns a new 
 
 #### --text--
 
-What is the purpose of the `prompt()` method?
+`prompt()` 方法的作用是什么？
 
 #### --distractors--
 
-It displays a message in the console.
+它在控制台显示一条消息。
 
 ---
 
-It displays an alert box with a message.
+它显示一个带有消息的警告框。
 
 ---
 
-It displays a confirmation box with a message.
+它显示一个带有消息的确认框。
 
 #### --answer--
 
-It displays a dialog box that waits for the user input.
+它显示一个等待用户输入的对话框。
 
 ### --question--
 
 #### --text--
 
-Which of the following is the correct way to access the third character of a string?
+下列哪种方式可以访问字符串的第三个字符？
 
 #### --distractors--
 
@@ -205,7 +205,7 @@ developer[2];
 
 #### --text--
 
-How can you obtain the ASCII value of the first character in the string `"hello"`?
+如何获取字符串 `"hello"` 第一个字符的 ASCII 值？
 
 #### --distractors--
 
@@ -227,7 +227,7 @@ How can you obtain the ASCII value of the first character in the string `"hello"
 
 #### --text--
 
-Which method can you use to obtain the character corresponding to an ASCII value?
+下列哪个方法可以获取与 ASCII 值对应的字符？
 
 #### --distractors--
 
@@ -249,7 +249,7 @@ Which method can you use to obtain the character corresponding to an ASCII value
 
 #### --text--
 
-Which of the following `indexOf` examples will log `-1` to the console?
+下列哪个 `indexOf` 示例会在控制台输出 `-1`？
 
 #### --distractors--
 
@@ -283,7 +283,7 @@ console.log(organization.indexOf("c"));
 
 #### --text--
 
-How can you check if the string `"JavaScript"` contains `"Script"`?
+如何检查字符串 `"JavaScript"` 是否包含 `"Script"`？
 
 #### --distractors--
 
@@ -305,7 +305,7 @@ How can you check if the string `"JavaScript"` contains `"Script"`?
 
 #### --text--
 
-Which of the following extracts the substring `"Script"` from the string `"JavaScript"`?
+下列哪一项可以从字符串 `"JavaScript"` 中提取子字符串 `"Script"`？
 
 #### --distractors--
 
@@ -327,7 +327,7 @@ Which of the following extracts the substring `"Script"` from the string `"JavaS
 
 #### --text--
 
-How do you convert the string `"JavaScript"` to uppercase?
+如何将字符串 `"JavaScript"` 转换为大写？
 
 #### --distractors--
 
@@ -349,7 +349,7 @@ How do you convert the string `"JavaScript"` to uppercase?
 
 #### --text--
 
-How do you convert the string `"JavaScript"` to lowercase?
+如何将字符串 `"JavaScript"` 转换为小写？
 
 #### --distractors--
 
@@ -371,7 +371,7 @@ How do you convert the string `"JavaScript"` to lowercase?
 
 #### --text--
 
-Which of the following will replace `"dogs"` with `"cats"` in the string `"I love dogs"`.
+下列哪一项可以将字符串 `"I love dogs"` 中的 `"dogs"` 替换为 `"cats"`？
 
 #### --distractors--
 
@@ -393,7 +393,7 @@ Which of the following will replace `"dogs"` with `"cats"` in the string `"I lov
 
 #### --text--
 
-Which method is used to repeat a string a specified number of times?
+哪个方法用于将字符串重复指定次数？
 
 #### --distractors--
 
@@ -415,7 +415,7 @@ Which method is used to repeat a string a specified number of times?
 
 #### --text--
 
-What will the following code return: `"abc".repeat(3)`?
+以下代码 `"abc".repeat(3)` 会返回什么？
 
 #### --distractors--
 
@@ -427,7 +427,7 @@ What will the following code return: `"abc".repeat(3)`?
 
 ---
 
-It will throw an error.
+会抛出错误。
 
 #### --answer--
 
@@ -437,7 +437,7 @@ It will throw an error.
 
 #### --text--
 
-Which method will remove whitespace from the beginning and end of a string?
+哪个方法可以移除字符串开头和结尾的空白字符？
 
 #### --distractors--
 
@@ -459,7 +459,7 @@ Which method will remove whitespace from the beginning and end of a string?
 
 #### --text--
 
-Which of the following is the correct syntax for escaping quotes?
+下列哪一项是转义引号的正确语法？
 
 #### --distractors--
 
@@ -484,4 +484,3 @@ Which of the following is the correct syntax for escaping quotes?
 ```js
 "She said, \"Hello!\""
 ```
-

@@ -204,7 +204,7 @@ assert.isBelow(rightMargin - leftMargin, 6);
 
 ```html
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
     <title>致敬页</title>

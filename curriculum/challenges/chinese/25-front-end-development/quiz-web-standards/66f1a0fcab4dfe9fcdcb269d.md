@@ -7,7 +7,7 @@ dashedName: quiz-web-standards
 
 # --description--
 
-To pass the quiz, you must correctly answer at least 17 of the 20 of the questions below.
+要通过本测验，你必须正确回答以下 20 道题中的至少 17 道。
 
 # --quizzes--
 
@@ -17,7 +17,7 @@ To pass the quiz, you must correctly answer at least 17 of the 20 of the questio
 
 #### --text--
 
-Which protocol is responsible for domain name resolution?
+哪个协议负责域名解析？
 
 #### --distractors--
 
@@ -39,29 +39,29 @@ DNS
 
 #### --text--
 
-What does the 404 HTTP response code indicate?
+404 HTTP 响应码表示什么？
 
 #### --distractors--
 
-Server error
+服务器错误
 
 ---
 
-Unauthorized access
+未授权访问
 
 ---
 
-Redirect
+重定向
 
 #### --answer--
 
-Resource not found
+资源未找到
 
 ### --question--
 
 #### --text--
 
-What is the full form of TCP in TCP/IP?
+TCP/IP 中 TCP 的全称是什么？
 
 #### --distractors--
 
@@ -77,13 +77,13 @@ Transfer Connection Protocol
 
 #### --answer--
 
-Transmission Control Protocol
+Transmission Control Protocol（传输控制协议）
 
 ### --question--
 
 #### --text--
 
-Which of the following is a static file type?
+以下哪项是静态文件类型？
 
 #### --distractors--
 
@@ -105,7 +105,7 @@ HTML
 
 #### --text--
 
-Which response code class represents a successful operation?
+哪个响应码类别表示操作成功？
 
 #### --distractors--
 
@@ -127,139 +127,139 @@ Which response code class represents a successful operation?
 
 #### --text--
 
-Which part of a URL is 'freecodecamp.org' in 'https://www.freecodecamp.org'?
+在 'https://www.freecodecamp.org' 中，'freecodecamp.org' 是 URL 的哪一部分？
 
 #### --distractors--
 
-Protocol
+协议
 
 ---
 
-Subdomain
+子域名
 
 ---
 
-TLD
+顶级域名
 
 #### --answer--
 
-Domain
+域名
 
 ### --question--
 
 #### --text--
 
-What is the main function of the HTTP protocol?
+HTTP 协议的主要功能是什么？
 
 #### --distractors--
 
-Send emails
+发送电子邮件
 
 ---
 
-Resolve IP addresses
+解析 IP 地址
 
 ---
 
-Stream media
+流媒体传输
 
 #### --answer--
 
-Transfer hypertext documents between clients and servers
+在客户端和服务器之间传输超文本文件
 
 ### --question--
 
 #### --text--
 
-What does W3C stand for?
+W3C 代表什么？
 
 #### --distractors--
 
-World Web Communication
+World Web Communication（世界网络通信）
 
 ---
 
-Web Creation Committee
+Web Creation Committee（网页创建委员会）
 
 ---
 
-Web Coding Center
+Web Coding Center（网页编码中心）
 
 #### --answer--
 
-World Wide Web Consortium
+World Wide Web Consortium（万维网联盟）
 
 ### --question--
 
 #### --text--
 
-What does a web hosting service provide?
+网站托管服务提供什么？
 
 #### --distractors--
 
-Domain name registration
+域名注册
 
 ---
 
-DNS management
+DNS 管理
 
 ---
 
-Browser rendering
+浏览器渲染
 
 #### --answer--
 
-Server space for storing web files
+用于存储网站文件的服务器空间
 
 ### --question--
 
 #### --text--
 
-What does the 301 HTTP response code indicate?
+301 HTTP 响应码表示什么？
 
 #### --distractors--
 
-Temporary redirect
+临时重定向
 
 ---
 
-Unauthorized
+未授权
 
 ---
 
-Bad request
+错误请求
 
 #### --answer--
 
-Permanent redirect
+永久重定向
 
 ### --question--
 
 #### --text--
 
-What is the purpose of a domain registrar?
+域名注册商的作用是什么？
 
 #### --distractors--
 
-Store web content
+存储网站内容
 
 ---
 
-Manage DNS records
+管理 DNS 记录
 
 ---
 
-Allocate IP addresses
+分配 IP 地址
 
 #### --answer--
 
-Register domain names
+注册域名
 
 ### --question--
 
 #### --text--
 
-Which of the following standards bodies is primarily focused on the development of HTML?
+以下哪个标准组织主要专注于 HTML 的开发？
 
 #### --distractors--
 
@@ -281,175 +281,175 @@ WHATWG
 
 #### --text--
 
-What are the key aspect that differentiates the POST method from GET in terms of form submissions?
+在表单提交中，POST 方法与 GET 方法的主要区别是什么？
 
 #### --distractors--
 
-GET requests are more secure than POST
+GET 请求比 POST 更安全
 
 ---
 
-POST includes data in the URL, while GET sends data in the body
+POST 将数据包含在 URL 中，而 GET 在请求体中发送数据
 
 ---
 
-POST is idempotent, whereas GET is not
+POST 是幂等的，而 GET 不是
 
 #### --answer--
 
-GET is limited by URL length, while POST is not
+GET 受 URL 长度限制，而 POST 不受限制
 
 ### --question--
 
 #### --text--
 
-What does the TCP three-way handshake process achieve in web communication?
+TCP 三次握手过程在 Web 通信中实现了什么？
 
 #### --distractors--
 
-Establishes a secure communication channel
+建立安全通信通道
 
 ---
 
-Initiates and terminates an HTTP request
+启动和终止 HTTP 请求
 
 ---
 
-Encodes the IP address for DNS resolution
+为 DNS 解析编码 IP 地址
 
 #### --answer--
 
-Confirms the connection between client and server for reliable data transfer
+确认客户端和服务器之间的连接以实现可靠数据传输
 
 ### --question--
 
 #### --text--
 
-What is the one disadvantage of using dynamic content over static content on a website?
+与静态内容相比，网站使用动态内容的一个缺点是什么？
 
 #### --distractors--
 
-Dynamic content loads faster than static content
+动态内容加载比静态内容更快
 
 ---
 
-Static content cannot be updated without modifying server-side code
+静态内容不能在不修改服务器端代码的情况下更新
 
 ---
 
-Dynamic content does not require server-side languages
+动态内容不需要服务器端语言
 
 #### --answer--
 
-Dynamic content is difficult to cache effectively
+动态内容难以有效缓存
 
 ### --question--
 
 #### --text--
 
-Which of the following is a key principle of web standards?
+以下哪项是 Web 标准的关键原则？
 
 #### --distractors--
 
-Platform dependency
+平台依赖性
 
 ---
 
-High vendor lock-in
+高度厂商锁定
 
 ---
 
-Proprietary formats
+专有格式
 
 #### --answer--
 
-Backward compatibility
+向后兼容性
 
 ### --question--
 
 #### --text--
 
-Which of the following is not a type of asset returned in an HTTP response?
+以下哪项不是 HTTP 响应返回的资源类型？
 
 #### --distractors--
 
-HTML file
+HTML 文件
 
 ---
 
-CSS file
+CSS 文件
 
 ---
 
-JavaScript file
+JavaScript 文件
 
 #### --answer--
 
-SSH key
+SSH 密钥
 
 ### --question--
 
 #### --text--
 
-What is the primary advantage of dynamic files over static files?
+动态文件相比静态文件的主要优势是什么？
 
 #### --distractors--
 
-Faster load times
+加载速度更快
 
 ---
 
-No server-side processing required
+不需要服务器端处理
 
 ---
 
-More cacheable by browsers
+更容易被浏览器缓存
 
 #### --answer--
 
-Ability to generate content based on user input
+能够根据用户输入生成内容
 
 ### --question--
 
 #### --text--
 
-What is the main benefit of following web standards during development?
+在开发过程中遵循 Web 标准的主要好处是什么？
 
 #### --distractors--
 
-Higher performance on proprietary browsers
+在专有浏览器上性能更高
 
 ---
 
-Allows for vendor-specific features
+允许使用厂商特定功能
 
 ---
 
-Excludes older devices from support
+不支持旧设备
 
 #### --answer--
 
-Ensures cross-browser compatibility
+确保跨浏览器兼容性
 
 ### --question--
 
 #### --text--
 
-Which phase of the web standards lifecycle comes after 'Working Draft'?
+Web 标准生命周期中，“工作草案”之后的阶段是什么？
 
 #### --distractors--
 
-Public implementation
+公开实现
 
 ---
 
-Editor’s Draft
+编辑草案
 
 ---
 
-Final Recommendation
+最终建议
 
 #### --answer--
 
-Candidate Recommendation
+候选建议
 

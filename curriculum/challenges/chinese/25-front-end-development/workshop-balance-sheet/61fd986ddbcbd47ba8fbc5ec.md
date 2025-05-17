@@ -1,19 +1,19 @@
 ---
 id: 61fd986ddbcbd47ba8fbc5ec
-title: Step 23
+title: 步骤 23
 challengeType: 0
 dashedName: step-23
 ---
 
 # --description--
 
-Within the third `tr`, add a `th` element with the text `Credit The outstanding balance on our credit card.`. Wrap that text, except for `Credit`, within a `span` element with the `class` set to `description`.
+在第三个 `tr` 元素内，添加一个 `th` 元素，其文本内容应为 `Credit The outstanding balance on our credit card.`。将此文本中，`Credit` 之后的部分（即 `The outstanding balance on our credit card.`）用一个 `class` 属性值为 `description` 的 `span` 元素包裹起来。
 
-Add three `td` elements below that, and give them the following text, in order: `$50`, `$50`, and `$75`. Give the third `td` element a `class` set to `current`.
+在该 `th` 元素之后，于同一个 `tr` 内，添加三个 `td` 元素。按顺序，分别给它们设置以下文本内容：`$50`、`$50` 和 `$75`。将第三个 `td` 元素的 `class` 属性设置为 `current`。
 
 # --hints--
 
-Your third `tr` should have a `th` element.
+你的第三个 `tr` 元素内应该有一个 `th` 元素。
 
 ```js
 const table = document.querySelectorAll('table')?.[1];
@@ -22,7 +22,7 @@ const tableRow = tbody?.querySelectorAll('tr')?.[2];
 assert.isNotNull(tableRow?.querySelector('th'));
 ```
 
-Your `th` element should have the text `Credit The outstanding balance on our credit card.`.
+你的 `th` 元素的文本内容应为 `Credit The outstanding balance on our credit card.`。
 
 ```js
 const table = document.querySelectorAll('table')?.[1];
@@ -34,7 +34,7 @@ assert.strictEqual(
 );
 ```
 
-You should wrap the text `The outstanding balance on our credit card.` in a `span` element.
+你应该将文本 `The outstanding balance on our credit card.` 用一个 `span` 元素包裹起来。
 
 ```js
 const table = document.querySelectorAll('table')?.[1];
@@ -46,7 +46,7 @@ assert.strictEqual(
 );
 ```
 
-Your `span` element should have the `class` attribute set to `description`.
+你的 `span` 元素的 `class` 属性应设置为 `description`。
 
 ```js
 const table = document.querySelectorAll('table')?.[1];
@@ -57,7 +57,7 @@ assert.isTrue(
 );
 ```
 
-You should have three `td` elements.
+你应该有三个 `td` 元素。
 
 ```js
 const table = document.querySelectorAll('table')?.[1];
@@ -66,7 +66,7 @@ const tableRow = tbody?.querySelectorAll('tr')?.[2];
 assert.lengthOf(tableRow?.querySelectorAll('td'), 3);
 ```
 
-Your first `td` element should have the text `$50`.
+你的第一个 `td` 元素的文本内容应为 `$50`。
 
 ```js
 const table = document.querySelectorAll('table')?.[1];
@@ -75,7 +75,7 @@ const tableRow = tbody?.querySelectorAll('tr')?.[2];
 assert.strictEqual(tableRow?.querySelectorAll('td')?.[0]?.textContent, '$50');
 ```
 
-Your second `td` element should have the text `$50`.
+你的第二个 `td` 元素的文本内容应为 `$50`。
 
 ```js
 const table = document.querySelectorAll('table')?.[1];
@@ -84,7 +84,7 @@ const tableRow = tbody?.querySelectorAll('tr')?.[2];
 assert.strictEqual(tableRow?.querySelectorAll('td')?.[1]?.textContent, '$50');
 ```
 
-Your third `td` element should have the text `$75`.
+你的第三个 `td` 元素的文本内容应为 `$75`。
 
 ```js
 const table = document.querySelectorAll('table')?.[1];
@@ -93,7 +93,7 @@ const tableRow = tbody?.querySelectorAll('tr')?.[2];
 assert.strictEqual(tableRow?.querySelectorAll('td')?.[2]?.textContent, '$75');
 ```
 
-Your third `td` element should have the `class` set to `current`.
+你的第三个 `td` 元素的 `class` 属性应设置为 `current`。
 
 ```js
 const table = document.querySelectorAll('table')?.[1];
@@ -215,3 +215,4 @@ assert.isTrue(
 ```css
 
 ```
+

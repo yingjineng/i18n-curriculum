@@ -1,20 +1,21 @@
 ---
 id: 67f39babe1e2ec1fb6eea32a
-title: Dictionaries and Sets Review
+title: 字典和集合复习
 challengeType: 24
 dashedName: review-dictionaries-and-sets
 ---
 
 # --description--
 
-## First topic
+## 第一个主题
 
-Describe
+描述
 
-## Second topic
+## 第二个主题
 
-Describe
+描述
 
 # --assignment--
 
-Review the Dictionaries and Sets topics and concepts.
+复习字典和集合的相关主题和概念。
+

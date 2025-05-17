@@ -1,21 +1,21 @@
 ---
 id: 61fda339eadcfd92a6812bed
-title: Step 30
+title: 步骤 30
 challengeType: 0
 dashedName: step-30
 ---
 
 # --description--
 
-Before you get too far into your styling, you should make use of the `sr-only` class. You can use CSS to make elements with this class completely hidden from the visual page, but still be announced by screen readers.
+在深入研究样式之前，你应该使用 `sr-only` 类。 你可以使用 CSS 使具有此类的元素在视觉页面上完全隐藏，但仍可被屏幕阅读器识别。
 
-The CSS you are about to write is a common set of properties used to ensure elements are completely hidden visually.
+你将要编写的 CSS 是一组常用的属性，用于确保元素在视觉上完全隐藏。
 
-The `span[class~="sr-only"]` selector will select any `span` element whose `class` _includes_ `sr-only`. Create that selector, and give it a `border` property set to `0`.
+`span[class~="sr-only"]` 选择器将选择 `class` *包含* `sr-only` 的任何 `span` 元素。 创建该选择器，并将其 `border` 属性设置为 `0`。
 
 # --hints--
 
-You should have an `span[class~="sr-only"]` selector.
+你应该有一个 `span[class~="sr-only"]` 选择器。
 
 ```js
 assert.isNotNull(
@@ -23,7 +23,7 @@ assert.isNotNull(
 );
 ```
 
-Your `span[class~="sr-only"]` selector should have a `border` property set to `0`.
+你的 `span[class~="sr-only"]` 选择器应该有一个 `border` 属性设置为 `0`。
 
 ```js
 assert.strictEqual(

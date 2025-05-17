@@ -1,16 +1,16 @@
 ---
 id: 671a999cc77b7f9bceb4caeb
-title: CSS Animations Review
+title: CSS 动画复习
 challengeType: 24
 dashedName: review-css-animations
 ---
 
 # --description--
 
-## CSS Animation Basics
+## CSS 动画基础
 
-- **Definition**: CSS animations allow you to create dynamic, visually engaging effects on web pages without the need for JavaScript or complex programming. They provide a way to smoothly transition elements between different styles over a specified duration.
-- **The `@keyframes` Rule**: This rule defines the stages and styles of the animation. It specifies what styles the element should have at various points during the animation.
+- **定义**：CSS 动画允许你在网页上创建动态且具有视觉吸引力的效果，无需 JavaScript 或复杂的编程。它们提供了一种在指定持续时间内平滑地将元素从一种样式过渡到另一种样式的方法。
+- **`@keyframes` 规则**：该规则定义了动画的各个阶段和样式。它指定了动画过程中元素在不同时间点应具有的样式。
 
 ```css
 @keyframes slide-in {
@@ -23,19 +23,19 @@ dashedName: review-css-animations
 }
 ```
 
-- **`animation` Property**: This is the shorthand property used to apply animations.
-- **`animation-name`**: This specifies the name for the `@keyframes` rule to use.
-- **`animation-duration`**: This sets how long the animation should take to complete.
-- **`animation-timing-function`**: This defines how the animation progresses over time (such as ease, linear, ease-in-out).
-- **`animation-delay`**: This specifies a delay before the animation starts.
-- **`animation-iteration-count`**: This sets how many times the animation should repeat.
-- **`animation-direction`**: This determines whether the animation should play forwards, backwards, or alternate.
-- **`animation-fill-mode`**: This specifies how the element should be styled before and after the animation.
-- **`animation-play-state`**: This allows you to pause and resume the animation.
+- **`animation` 属性**：这是用于应用动画的简写属性。
+- **`animation-name`**：指定要使用的 `@keyframes` 规则的名称。
+- **`animation-duration`**：设置动画完成所需的时间。
+- **`animation-timing-function`**：定义动画随时间的进展方式（如 ease、linear、ease-in-out）。
+- **`animation-delay`**：指定动画开始前的延迟时间。
+- **`animation-iteration-count`**：设置动画重复的次数。
+- **`animation-direction`**：决定动画是正向播放、反向播放还是交替播放。
+- **`animation-fill-mode`**：指定动画开始前和结束后元素的样式表现。
+- **`animation-play-state`**：允许你暂停和恢复动画。
 
-## Accessibility and the `prefers-reduced-motion` Media Query
+## 可访问性与 `prefers-reduced-motion` 媒体查询
 
-- **The `prefers-reduced-motion` Media Query**: One of the primary accessibility concerns with animations is that they can cause discomfort or even physical harm to some users. People with vestibular disorders or motion sensitivity may experience dizziness, nausea, or headaches when exposed to certain types of movement on screen. The `prefers-reduced-motion` media query allows web developers to detect if the user has requested minimal animations or motion effects at the system level.
+- **`prefers-reduced-motion` 媒体查询**：动画的一个主要可访问性问题是它们可能会让部分用户感到不适，甚至造成身体伤害。患有前庭障碍或对运动敏感的人在屏幕上看到某些类型的运动时，可能会感到头晕、恶心或头痛。`prefers-reduced-motion` 媒体查询允许开发者检测用户是否在系统层面请求了最小化动画或运动效果。
 
 ```css
 .animated-element {
@@ -51,4 +51,5 @@ dashedName: review-css-animations
 
 # --assignment--
 
-Review the CSS Animations topics and concepts.
+复习 CSS 动画的相关主题和概念。
+

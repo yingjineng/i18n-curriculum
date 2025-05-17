@@ -1,15 +1,15 @@
 ---
 id: 671a98fbaabfba994e3d9a7c
-title: CSS Variables Review
+title: CSS 变量复习
 challengeType: 24
 dashedName: review-css-variables
 ---
 
 # --description--
 
-## CSS Custom Properties (CSS Variables)
+## CSS 自定义属性（CSS 变量）
 
-- **Definition**: CSS custom properties, also known as CSS variables, are entities defined by CSS authors that contain specific values to be reused throughout a document. They are a powerful feature that allows for more efficient, maintainable, and flexible stylesheets. Custom properties are particularly useful in creating themeable designs. You can define a set of properties for different themes:
+- **定义**：CSS 自定义属性，也称为 CSS 变量，是由 CSS 作者定义的实体，包含可在整个文档中重复使用的特定值。它们是一项强大的功能，使样式表更加高效、可维护和灵活。自定义属性在创建可主题化设计时尤其有用。你可以为不同主题定义一组属性：
 
 ```css
 :root {
@@ -28,9 +28,9 @@ body {
 }
 ```
 
-## The `@property` Rule
+## `@property` 规则
 
-- **Definition**: The `@property` rule is a powerful CSS feature that allows developers to define custom properties with greater control over their behavior, including how they animate and their initial values.
+- **定义**：`@property` 规则是一项强大的 CSS 功能，允许开发者对自定义属性的行为进行更精细的控制，包括它们如何动画以及初始值。
 
 ```css
 @property --property-name {
@@ -40,11 +40,11 @@ body {
 }
 ```
 
-- **`--property-name`**: This is the name of the custom property you're defining. Like all custom properties, it must start with two dashes. `--property-name` can be things like `<color>`, `<length>`, `<number>`, `<percentage>`, or more complex types.
-- **`syntax`**: This defines the type of the property.
-- **`inherits`**: This specifies whether the property should inherit its value from its parent element.
-- **`initial-value`**: This sets the default value of the property.
-- **Gradient Example Using the `@property` Rule**: This example creates a gradient that smoothly animates when the element is hovered over.
+- **`--property-name`**：这是你要定义的自定义属性名称。和所有自定义属性一样，必须以两个短横线开头。`--property-name` 可以是 `<color>`、`<length>`、`<number>`、`<percentage>` 或更复杂的类型。
+- **`syntax`**：定义属性的类型。
+- **`inherits`**：指定该属性是否应从父元素继承值。
+- **`initial-value`**：设置属性的默认值。
+- **使用 `@property` 规则的渐变示例**：此示例创建了一个在元素悬停时平滑动画的渐变。
 
 ```html
 <div class="gradient-box"></div>
@@ -69,7 +69,7 @@ body {
 }
 ```
 
-- **Fallbacks**: When using the custom property, you can provide a fallback value using the `var()` function, just as you would with standard custom properties:
+- **回退值**：使用自定义属性时，可以像标准自定义属性一样，在 `var()` 函数中提供回退值：
 
 ```css
 .button {
@@ -79,4 +79,5 @@ body {
 
 # --assignment--
 
-Review the CSS Variables topics and concepts.
+复习 CSS 变量相关主题和概念。
+

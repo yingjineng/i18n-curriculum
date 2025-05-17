@@ -1,13 +1,13 @@
 ---
 id: 66ed8fa2f45ce3ece4053eab
-title: Basic CSS Quiz
+title: 基础 CSS 测验
 challengeType: 8
 dashedName: quiz-basic-css
 ---
 
 # --description--
 
-To pass the quiz, you must correctly answer at least 18 of the 20 questions below.
+要通过本测验，你必须正确回答以下 20 道题中的至少 18 道。
 
 # --quizzes--
 
@@ -17,29 +17,29 @@ To pass the quiz, you must correctly answer at least 18 of the 20 questions belo
 
 #### --text--
 
-What does CSS stand for?
+CSS 的全称是什么？
 
 #### --distractors--
 
-Cascading Style Script
+Cascading Style Script（级联样式脚本）
 
 ---
 
-Concatenating Style Script
+Concatenating Style Script（连接样式脚本）
 
 ---
 
-Castor Sage Style
+Castor Sage Style（海狸鼠鼠鼠样式）
 
 #### --answer--
 
-Cascading Style Sheets
+Cascading Style Sheets（层叠样式表）
 
 ### --question--
 
 #### --text--
 
-Which of the following is a correct CSS rule?
+以下哪一项是正确的 CSS 规则？
 
 #### --distractors--
 
@@ -61,29 +61,29 @@ Which of the following is a correct CSS rule?
 
 #### --text--
 
-What does `<meta name="viewport">` do?
+`<meta name="viewport">` 的作用是什么？
 
 #### --distractors--
 
-It links external stylesheets to a webpage for responsive design.
+它将外部样式表链接到网页以实现响应式设计。
 
 ---
 
-It specifies the metadata used by search engines to index a webpage.
+它指定搜索引擎用于索引网页的元数据。
 
 ---
 
-It specifies the character encoding used on the webpage.
+它指定网页使用的字符编码。
 
 #### --answer--
 
-It controls the shape and size of a web page on different screen sizes.
+它控制网页在不同屏幕尺寸上的形状和大小。
 
 ### --question--
 
 #### --text--
 
-Which syntax is correct to use inline CSS?
+以下哪种语法用于内联 CSS 是正确的？
 
 #### --distractors--
 
@@ -105,29 +105,29 @@ Which syntax is correct to use inline CSS?
 
 #### --text--
 
-When using internal CSS, where is the `style` element placed within the HTML?
+使用内部 CSS 时，`style` 元素应放在 HTML 的哪个位置？
 
 #### --distractors--
 
-In the `meta` element.
+在 `meta` 元素中。
 
 ---
 
-In the `script` element.
+在 `script` 元素中。
 
 ---
 
-In the `body` element.
+在 `body` 元素中。
 
 #### --answer--
 
-In the `head` element.
+在 `head` 元素中。
 
 ### --question--
 
 #### --text--
 
-Which rule is correct for setting the width and height in CSS?
+以下哪条规则可以同时设置宽度和高度？
 
 #### --distractors--
 
@@ -149,7 +149,7 @@ Which rule is correct for setting the width and height in CSS?
 
 #### --text--
 
-Which selector correctly targets `h1` elements only when inside a `div`?
+哪个选择器能正确选中只在 `div` 内部的 `h1` 元素？
 
 #### --distractors--
 
@@ -171,7 +171,7 @@ Which selector correctly targets `h1` elements only when inside a `div`?
 
 #### --text--
 
-Which selector is correct to target direct children of a `footer`?
+哪个选择器能正确选中 `footer` 的直接子元素？
 
 #### --distractors--
 
@@ -193,7 +193,7 @@ Which selector is correct to target direct children of a `footer`?
 
 #### --text--
 
-Which selector is correct to target the next sibling of an `img`?
+哪个选择器能正确选中 `img` 的下一个兄弟元素？
 
 #### --distractors--
 
@@ -215,7 +215,7 @@ Which selector is correct to target the next sibling of an `img`?
 
 #### --text--
 
-Which selector is correct to target all siblings preceded by an `img` element?
+哪个选择器能正确选中所有紧跟在 `img` 元素之后的兄弟元素？
 
 #### --distractors--
 
@@ -237,51 +237,51 @@ Which selector is correct to target all siblings preceded by an `img` element?
 
 #### --text--
 
-What statement is TRUE about block-level elements?
+关于块级元素，哪项说法是正确的？
 
 #### --distractors--
 
-Block-level elements stack horizontally by default.
+块级元素默认水平排列。
 
 ---
 
-`width` and `height` properties usually do not apply to block-level elements unless you set their `display` property to `inline-block`.
+`width` 和 `height` 属性通常不适用于块级元素，除非将其 `display` 属性设置为 `inline-block`。
 
 ---
 
-Block-level elements cannot contain inline elements inside them.
+块级元素不能包含内联元素。
 
 #### --answer--
 
-Block-level elements start on a new line and take up the full width of their container.
+块级元素会从新的一行开始，并占据其父容器的全部宽度。
 
 ### --question--
 
 #### --text--
 
-What statement is TRUE when using the `inline-block` value?
+关于 `inline-block` 值，哪项说法是正确的？
 
 #### --distractors--
 
-Elements stack vertically, always taking up the full width of their container.
+元素垂直堆叠，总是占据父容器的全部宽度。
 
 ---
 
-Elements align horizontally but cannot apply vertical padding or margin.
+元素水平排列，但不能设置垂直的内边距或外边距。
 
 ---
 
-Elements respect width and height settings but cannot contain other elements inside them.
+元素可以设置宽高，但不能包含其他元素。
 
 #### --answer--
 
-Elements retain inline flow but allow setting width and height.
+元素保持内联流，但可以设置宽度和高度。
 
 ### --question--
 
 #### --text--
 
-Given the following selectors, which has the highest specificity?
+以下选择器中，哪个具有最高的优先级（特异性）？
 
 #### --distractors--
 
@@ -303,7 +303,7 @@ Given the following selectors, which has the highest specificity?
 
 #### --text--
 
-Given the following selectors, which has the lowest specificity?
+以下选择器中，哪个具有最低的优先级（特异性）？
 
 #### --distractors--
 
@@ -325,73 +325,73 @@ Given the following selectors, which has the lowest specificity?
 
 #### --text--
 
-What does the `*` selector do?
+`*` 选择器的作用是什么？
 
 #### --distractors--
 
-Targets some elements on the page.
+选中页面上的部分元素。
 
 ---
 
-Targets elements that have children on the page.
+选中页面上有子元素的元素。
 
 ---
 
-Targets all `p` elements on the page.
+选中页面上的所有 `p` 元素。
 
 #### --answer--
 
-Targets all elements on the page.
+选中页面上的所有元素。
 
 ### --question--
 
 #### --text--
 
-What does `!important` do in CSS?
+CSS 中的 `!important` 有什么作用？
 
 #### --distractors--
 
-It makes the CSS rule work exclusively for inline styles and ignores styles defined in external or internal stylesheets.
+它使 CSS 规则只对内联样式生效，忽略外部或内部样式表中的样式。
 
 ---
 
-It disables all other CSS properties applied to the same element, effectively making it the only rule that affects the element's styling.
+它禁用应用于同一元素的所有其他 CSS 属性，使其成为唯一影响元素样式的规则。
 
 ---
 
-It applies on to a certain selector or group of elements.
+它只应用于某个选择器或元素组。
 
 #### --answer--
 
-It overrides any other values applied to the property for that selector.
+它会覆盖为该选择器应用的任何其他属性值。
 
 ### --question--
 
 #### --text--
 
-How does the CSS Cascade algorithm work?
+CSS 层叠算法是如何工作的？
 
 #### --distractors--
 
-It determines styles of the element based on order of declaration, regardless of other factors.
+它仅根据声明顺序决定元素的样式，不考虑其他因素。
 
 ---
 
-It applies styles based solely on the order they are written, ignoring specificity.
+它只根据书写顺序应用样式，忽略特异性。
 
 ---
 
-It applies styles prioritizing specificity, ignoring origin and relevance.
+它只优先考虑特异性，忽略来源和相关性。
 
 #### --answer--
 
-It determines styles of the element based on specificity and order of declaration.
+它根据特异性和声明顺序决定元素的样式。
 
 ### --question--
 
 #### --text--
 
-Which rule applies `32px` of margin to all sides?
+哪条规则能为所有方向设置 `32px` 的外边距？
 
 #### --distractors--
 
@@ -413,7 +413,7 @@ Which rule applies `32px` of margin to all sides?
 
 #### --text--
 
-Which rule applies `24px` padding to the top and bottom?
+哪条规则能为上下方向设置 `24px` 的内边距？
 
 #### --distractors--
 
@@ -435,23 +435,23 @@ Which rule applies `24px` padding to the top and bottom?
 
 #### --text--
 
-For `padding: 10px 20px 30px 40px`, what is the correct order of values?
+对于 `padding: 10px 20px 30px 40px`，值的正确顺序是什么？
 
 #### --distractors--
 
-Right, Top, Left, Bottom.
+右，上，左，下
 
 ---
 
-Top, Left, Bottom, Right.
+上，左，下，右
 
 ---
 
-Top, Bottom, Right, Left.
+上，下，右，左
 
 #### --answer--
 
-Top, Right, Bottom, Left.
+上，右，下，左
 
 ## --quiz--
 
@@ -459,29 +459,29 @@ Top, Right, Bottom, Left.
 
 #### --text--
 
-What are the main parts of a CSS rule?
+CSS 规则的主要组成部分是什么？
 
 #### --distractors--
 
-Elements and attributes
+元素和属性
 
 ---
 
-Style and sheets
+样式和表
 
 ---
 
-Scripts and values
+脚本和值
 
 #### --answer--
 
-Selectors and declaration blocks
+选择器和声明块
 
 ### --question--
 
 #### --text--
 
-Which of the following is the correct syntax for a CSS rule?
+以下哪一项是 CSS 规则的正确语法？
 
 #### --distractors--
 
@@ -519,29 +519,29 @@ body {
 
 #### --text--
 
-What are default browser styles?
+什么是浏览器默认样式？
 
 #### --distractors--
 
-HTML elements that have the same styling properties regardless of the browser.
+HTML 元素在所有浏览器中具有相同的样式属性。
 
 ---
 
-They are mandatory styles that you must use for specific HTML elements.
+它们是你必须为特定 HTML 元素使用的强制样式。
 
 ---
 
-They are the color themes for the various browsers.
+它们是各种浏览器的配色主题。
 
 #### --answer--
 
-The CSS rules that browsers apply automatically.
+浏览器自动应用的 CSS 规则。
 
 ### --question--
 
 #### --text--
 
-What is the default value for the `width` property?
+`width` 属性的默认值是什么？
 
 #### --distractors--
 
@@ -563,51 +563,51 @@ What is the default value for the `width` property?
 
 #### --text--
 
-What does the `min-height` property specify?
+`min-height` 属性指定什么？
 
 #### --distractors--
 
-The starting height for an element.
+元素的起始高度。
 
 ---
 
-The height for an element.
+元素的高度。
 
 ---
 
-The maximum height for an element.
+元素的最大高度。
 
 #### --answer--
 
-The minimum height for an element.
+元素的最小高度。
 
 ### --question--
 
 #### --text--
 
-Which of the following is TRUE about the universal selector `*`?
+关于通配符选择器 `*`，以下哪项说法正确？
 
 #### --distractors--
 
-It has the highest specificity because it can style all the elements on a page.
+它具有最高的特异性，因为它可以为页面上的所有元素设置样式。
 
 ---
 
-It contributes 1 to all parts of the specificity value.
+它为特异性值的所有部分都加 1。
 
 ---
 
-It cannot reset styles across different browsers.
+它无法重置不同浏览器的样式。
 
 #### --answer--
 
-It has the lowest specificity value of any selector.
+它的特异性值是所有选择器中最低的。
 
 ### --question--
 
 #### --text--
 
-Which selector correctly targets `li` elements for an ordered list?
+哪个选择器能正确选中有序列表的 `li` 元素？
 
 #### --distractors--
 
@@ -629,7 +629,7 @@ Which selector correctly targets `li` elements for an ordered list?
 
 #### --text--
 
-Which selector targets the paragraph elements of a `div` element?
+哪个选择器能选中 `div` 元素中的段落元素？
 
 #### --distractors--
 
@@ -651,117 +651,117 @@ Which selector targets the paragraph elements of a `div` element?
 
 #### --text--
 
-Where does the `margin` apply styling properties?
+`margin` 属性应用于哪里？
 
 #### --distractors--
 
-The space inside element.
+元素内部的空间。
 
 ---
 
-Between the content and the border.
+内容与边框之间。
 
 ---
 
-On the border of the element.
+元素的边框上。
 
 #### --answer--
 
-The space outside the element.
+元素外部的空间。
 
 ### --question--
 
 #### --text--
 
-Where does the `padding` property apply styling?
+`padding` 属性应用于哪里？
 
 #### --distractors--
 
-Between the elements border and the surrounding elements.
+元素边框与周围元素之间。
 
 ---
 
-The space outside the element.
+元素外部的空间。
 
 ---
 
-On the border of the element.
+元素的边框上。
 
 #### --answer--
 
-The space inside the element.
+元素内部的空间。
 
 ### --question--
 
 #### --text--
 
-Which statement is FALSE about block-level elements?
+关于块级元素，哪项说法是错误的？
 
 #### --distractors--
 
-They can stretch to fit the width of their container.
+它们可以拉伸以适应容器宽度。
 
 ---
 
-Common block level elements include `div`, `paragraph`, and `section`.
+常见的块级元素有 `div`、`paragraph` 和 `section`。
 
 ---
 
-Block-level elements start on a new line and take up the full width of their container.
+块级元素会从新的一行开始，并占据其父容器的全部宽度。
 
 #### --answer--
 
-They cannot take up the full width available as they are blocked from doing so.
+它们无法占据全部可用宽度，因为被阻止了。
 
 ### --question--
 
 #### --text--
 
-Which statement is FALSE when using the `inline-block` value?
+关于 `inline-block` 值，哪项说法是错误的？
 
 #### --distractors--
 
-`inline-block` elements behave like inline elements.
+`inline-block` 元素表现为内联元素。
 
 ---
 
-They can have `width` and `height` properties.
+它们可以设置 `width` 和 `height` 属性。
 
 ---
 
-Elements retain inline flow but allow setting `width` and `height`.
+元素保持内联流，但可以设置 `width` 和 `height`。
 
 #### --answer--
 
-They do not share properties with inline or block level elements.
+它们不具备内联或块级元素的任何属性。
 
 ### --question--
 
 #### --text--
 
-Which is TRUE about the `!important` keyword?
+关于 `!important` 关键字，哪项说法是正确的？
 
 #### --distractors--
 
-They are used to make comments for an important CSS property.
+用于为重要的 CSS 属性添加注释。
 
 ---
 
-They make sure a CSS property has the correct syntax.
+确保 CSS 属性语法正确。
 
 ---
 
-They make CSS rules easier to maintain.
+让 CSS 规则更易于维护。
 
 #### --answer--
 
-They override the specificity of other selectors.
+它会覆盖其他选择器的特异性。
 
 ### --question--
 
 #### --text--
 
-What character precedes a class selector name?
+类选择器名称前面用什么字符？
 
 #### --distractors--
 
@@ -783,117 +783,117 @@ What character precedes a class selector name?
 
 #### --text--
 
-Which is FALSE about inline level elements?
+关于内联元素，哪项说法是错误的？
 
 #### --distractors--
 
-They take up only as much space as they need.
+它们只占用所需的空间。
 
 ---
 
-They do not start on a new line.
+它们不会从新的一行开始。
 
 ---
 
-Common inline elements include `span` and `img`.
+常见的内联元素有 `span` 和 `img`。
 
 #### --answer--
 
-They always start on a new line.
+它们总是从新的一行开始。
 
 ### --question--
 
 #### --text--
 
-Where are internal CSS styles accessed?
+内部 CSS 样式在哪里访问？
 
 #### --distractors--
 
-They are styles that are important to the project, so are not shared externally.
+它们是项目重要样式，因此不会外部共享。
 
 ---
 
-Since they form the core styling of the project, they are saved in the `styles.css` file so other web pages can access them.
+由于它们是项目的核心样式，所以保存在 `styles.css` 文件中，供其他网页访问。
 
 ---
 
-They are stored inside the `body` element when there is only one web page to style.
+当只有一个网页需要样式时，它们存储在 `body` 元素内。
 
 #### --answer--
 
-They are written within the `style` section within the `head` element.
+它们写在 `head` 元素内的 `style` 部分。
 
 ### --question--
 
 #### --text--
 
-What is the order for applying the `padding` property when using the shorthand syntax?
+使用简写语法时，`padding` 属性的应用顺序是什么？
 
 #### --distractors--
 
-`top`, `bottom`, `left`, `right`
+`上`，`下`，`左`，`右`
 
 ---
 
-`left`, `right`, `top`, `bottom`
+`左`，`右`，`上`，`下`
 
 ---
 
-`right`, `top`, `left`, `bottom`
+`右`，`上`，`左`，`下`
 
 #### --answer--
 
-`top`, `right`, `bottom`, `left`
+`上`，`右`，`下`，`左`
 
 ### --question--
 
 #### --text--
 
-What is the order for applying the `margin` property when using the shorthand syntax?
+使用简写语法时，`margin` 属性的应用顺序是什么？
 
 #### --distractors--
 
-`left`, `right`, `top`, `bottom`
+`左`，`右`，`上`，`下`
 
 ---
 
-`right`, `top`, `left`, `bottom`
+`右`，`上`，`左`，`下`
 
 ---
 
-`top`, `bottom`, `left`, `right`
+`上`，`下`，`左`，`右`
 
 #### --answer--
 
-`top`, `right`, `bottom`, `left`
+`上`，`右`，`下`，`左`
 
 ### --question--
 
 #### --text--
 
-What are inline CSS styles used for?
+内联 CSS 样式的作用是什么？
 
 #### --distractors--
 
-They are used to style inline elements only.
+仅用于为内联元素设置样式。
 
 ---
 
-They are used to style elements only when they all appear on the same line of the browser viewport.
+仅用于当所有元素都出现在浏览器视口同一行时设置样式。
 
 ---
 
-They are used to resolve the issue with separation of concerns.
+用于解决关注点分离的问题。
 
 #### --answer--
 
-They are used to directly style within the element, instead of using internal or external CSS.
+用于直接在元素内部设置样式，而不是使用内部或外部 CSS。
 
 ### --question--
 
 #### --text--
 
-What symbol precedes the ID selector?
+ID 选择器前面用什么符号？
 
 #### --distractors--
 

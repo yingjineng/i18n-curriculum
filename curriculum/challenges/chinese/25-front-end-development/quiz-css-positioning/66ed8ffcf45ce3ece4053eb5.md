@@ -1,13 +1,13 @@
 ---
 id: 66ed8ffcf45ce3ece4053eb5
-title: CSS Positioning Quiz
+title: CSS 定位测验
 challengeType: 8
 dashedName: quiz-css-positioning
 ---
 
 # --description--
 
-To pass the quiz, you must correctly answer at least 18 of the 20 questions below.
+要通过本测验，你必须正确回答以下 20 道题中的至少 18 道。
 
 # --quizzes--
 
@@ -17,7 +17,7 @@ To pass the quiz, you must correctly answer at least 18 of the 20 questions belo
 
 #### --text--
 
-Which of the following is NOT a valid value for the `position` property?
+以下哪一项不是 `position` 属性的有效值？
 
 #### --distractors--
 
@@ -39,29 +39,29 @@ Which of the following is NOT a valid value for the `position` property?
 
 #### --text--
 
-What is the main purpose of the `float` property in CSS?
+CSS 中 `float` 属性的主要作用是什么？
 
 #### --distractors--
 
-Floats are used to remove an element from its normal flow on the page and automatically position it in the upper right hand side of the webpage.
+浮动用于将元素从页面的正常流中移除，并自动将其定位在网页的右上角。
 
 ---
 
-Floats are used to remove an element from its normal flow on the page and position it to the top of its container.
+浮动用于将元素从页面的正常流中移除，并将其定位在其容器的顶部。
 
 ---
 
-Floats are used to remove an element from its normal flow on the page and automatically position it to the bottom right hand side of webpage.
+浮动用于将元素从页面的正常流中移除，并自动将其定位在网页的右下角。
 
 #### --answer--
 
-Floats are used to remove an element from its normal flow on the page and position it either on the left or right side of its container.
+浮动用于将元素从页面的正常流中移除，并将其定位在其容器的左侧或右侧。
 
 ### --question--
 
 #### --text--
 
-Which of the following is an example making a box element float to the left?
+以下哪一个是让盒子元素向左浮动的示例？
 
 #### --distractors--
 
@@ -115,29 +115,29 @@ Which of the following is an example making a box element float to the left?
 
 #### --text--
 
-What is the role of the `clear` property?
+`clear` 属性的作用是什么？
 
 #### --distractors--
 
-It is used to determine if an element needs to be moved to the bottom of the page.
+用于判断元素是否需要移动到页面底部。
 
 ---
 
-It is used to determine if an element needs to be completely cleared from the page.
+用于判断元素是否需要从页面中完全清除。
 
 ---
 
-It is used to determine if an element needs to be fixed to the top of the page.
+用于判断元素是否需要固定在页面顶部。
 
 #### --answer--
 
-It is used to determine if an element needs to be moved below the floated content.
+用于判断元素是否需要移动到浮动内容的下方。
 
 ### --question--
 
 #### --text--
 
-Which CSS property is used to control the vertical stacking order of positioned elements that overlap on the page?
+哪个 CSS 属性用于控制页面上重叠定位元素的垂直堆叠顺序？
 
 #### --distractors--
 
@@ -159,7 +159,7 @@ Which CSS property is used to control the vertical stacking order of positioned 
 
 #### --text--
 
-Which of the following is the correct syntax for relative positioning?
+以下哪一项是相对定位的正确语法？
 
 #### --distractors--
 
@@ -205,7 +205,7 @@ Which of the following is the correct syntax for relative positioning?
 
 #### --text--
 
-Which CSS property would you use to fix an element at a certain position on the page so that it does not move when scrolling occurs?
+要将元素固定在页面的某个位置，使其在滚动时不会移动，应使用哪个 CSS 属性？
 
 #### --distractors--
 
@@ -227,29 +227,29 @@ Which CSS property would you use to fix an element at a certain position on the 
 
 #### --text--
 
-What does absolute positioning do to an element?
+绝对定位会对元素产生什么影响？
 
 #### --distractors--
 
-Absolute positioning is used to determine if an element needs to be moved below the floated content.
+绝对定位用于判断元素是否需要移动到浮动内容下方。
 
 ---
 
-Absolute positioning is used to position the element within the normal document flow.
+绝对定位用于将元素定位在正常文档流中。
 
 ---
 
-Absolute positioning is used to control the vertical stacking order of positioned elements that overlap on the page.
+绝对定位用于控制页面上重叠定位元素的垂直堆叠顺序。
 
 #### --answer--
 
-Absolute positioning allows you to take an element out of the normal document flow, making it behave independently from other elements.
+绝对定位可以将元素从正常文档流中移除，使其独立于其他元素进行定位。
 
 ### --question--
 
 #### --text--
 
-Which of the following is NOT a valid property that you can use for absolute positioning?
+以下哪一项不是绝对定位时可以使用的属性？
 
 #### --distractors--
 
@@ -271,29 +271,29 @@ Which of the following is NOT a valid property that you can use for absolute pos
 
 #### --text--
 
-What is the key difference between relative and absolute positioning?
+相对定位和绝对定位的关键区别是什么？
 
 #### --distractors--
 
-Absolute positioning sets the element in a sticky position while relative positioning takes an element out of the normal document flow.
+绝对定位将元素设置为粘性位置，而相对定位会将元素从正常文档流中移除。
 
 ---
 
-Relative positioning sets the element in a fixed position while absolute positioning takes an element out of the normal document flow.
+相对定位将元素设置为固定位置，而绝对定位会将元素从正常文档流中移除。
 
 ---
 
-Absolute positioning positions the element within the normal document flow while relative positioning takes an element out of the normal document flow.
+绝对定位在正常文档流中定位元素，而相对定位会将元素从正常文档流中移除。
 
 #### --answer--
 
-Relative positioning positions the element within the normal document flow while absolute positioning takes an element out of the normal document flow.
+相对定位在正常文档流中定位元素，而绝对定位会将元素从正常文档流中移除。
 
 ### --question--
 
 #### --text--
 
-Which of the following is an example of positioning a box in the upper left hand corner of the page?
+以下哪一个是将盒子定位在页面左上角的示例？
 
 #### --distractors--
 
@@ -351,29 +351,29 @@ Which of the following is an example of positioning a box in the upper left hand
 
 #### --text--
 
-Which positioning method allows an element to stick to a defined position only when you scroll past a certain point?
+哪种定位方式可以让元素在滚动到某个点时才固定在指定位置？
 
 #### --distractors--
 
-Float positioning.
+浮动定位。
 
 ---
 
-Fixed positioning.
+固定定位。
 
 ---
 
-Absolute positioning.
+绝对定位。
 
 #### --answer--
 
-Sticky positioning.
+粘性定位（Sticky positioning）。
 
 ### --question--
 
 #### --text--
 
-Which of the following is a correct example of using sticky positioning?
+以下哪一个是使用粘性定位的正确示例？
 
 #### --distractors--
 
@@ -430,51 +430,51 @@ Which of the following is a correct example of using sticky positioning?
 
 #### --text--
 
-What is the difference between sticky and fixed positioning?
+粘性定位和固定定位有什么区别？
 
 #### --distractors--
 
-Sticky elements can only be used in table layouts while fixed elements can be used in any type of CSS layout.
+粘性元素只能用于表格布局，而固定元素可用于任何类型的 CSS 布局。
 
 ---
 
-Sticky elements will always remain in the same position while fixed elements will stick to a certain point then behave like relative elements.
+粘性元素始终保持在同一位置，而固定元素会先固定到某个点，然后表现为相对元素。
 
 ---
 
-Fixed elements will be positioned relative to its normal position while sticky elements will only stick to a certain point then behave like relative elements.
+固定元素会相对于其正常位置定位，而粘性元素只会在滚动到某个点时固定，然后表现为相对元素。
 
 #### --answer--
 
-Fixed elements will remain in the same position on the screen while sticky elements will only stick to a certain point then behave like relative elements.
+固定元素始终保持在屏幕的同一位置，而粘性元素只会在滚动到某个点时固定，然后表现为相对元素。
 
 ### --question--
 
 #### --text--
 
-What problem did the `clearfix` hack solve when working with floats?
+在使用浮动时，`clearfix` hack 解决了什么问题？
 
 #### --distractors--
 
-The `clearfix` hack helped solve the issue of floated elements being removed from the normal document flow and being placed in a fixed position on the page.
+`clearfix` hack 解决了浮动元素被移出正常文档流并被固定在页面上的问题。
 
 ---
 
-The `clearfix` hack helped solve the issue of floated elements not being responsive in mobile and tablet layouts.
+`clearfix` hack 解决了浮动元素在移动端和平板布局下不响应的问题。
 
 ---
 
-The `clearfix` hack helped solve the issue of floated elements disappearing from the page.
+`clearfix` hack 解决了浮动元素从页面消失的问题。
 
 #### --answer--
 
-The `clearfix` hack helped solve the issue of overlaps and collapsing in the layouts when multiple floated elements were stacked next to each other.
+`clearfix` hack 解决了多个浮动元素并排时布局重叠和塌陷的问题。
 
 ### --question--
 
 #### --text--
 
-Which of the following is a correct example for using the `clearfix` hack?
+以下哪一个是使用 `clearfix` hack 的正确示例？
 
 #### --distractors--
 
@@ -521,29 +521,29 @@ Which of the following is a correct example for using the `clearfix` hack?
 
 #### --text--
 
-What is static positioning?
+什么是静态定位？
 
 #### --distractors--
 
-This is used to remove an element from its normal flow on the page and automatically position it in the upper right hand side of the webpage.
+用于将元素从页面的正常流中移除，并自动将其定位在网页的右上角。
 
 ---
 
-This allows you to take an element out of the normal document flow, making it behave independently from other elements.
+允许你将元素从正常文档流中移除，使其独立于其他元素进行定位。
 
 ---
 
-This allows an element to stick to a defined position only when you scroll past a certain point.
+允许元素在滚动到某个点时才固定在指定位置。
 
 #### --answer--
 
-This is the normal flow for the document. Elements are positioned from top to bottom and left to right one after another.
+这是文档的正常流。元素依次从上到下、从左到右排列。
 
 ### --question--
 
 #### --text--
 
-Which of the following is an example of setting the navbar to the top of the page using fixed positioning?
+以下哪一个是使用固定定位将导航栏设置在页面顶部的示例？
 
 #### --distractors--
 
@@ -588,7 +588,7 @@ Which of the following is an example of setting the navbar to the top of the pag
 
 #### --text--
 
-Which of the following is a valid value to use for the `z-index` property?
+以下哪一项是 `z-index` 属性的有效值？
 
 #### --distractors--
 
@@ -610,7 +610,7 @@ Which of the following is a valid value to use for the `z-index` property?
 
 #### --text--
 
-Which of the following is the default value of the `position` property?
+以下哪一项是 `position` 属性的默认值？
 
 #### --distractors--
 
