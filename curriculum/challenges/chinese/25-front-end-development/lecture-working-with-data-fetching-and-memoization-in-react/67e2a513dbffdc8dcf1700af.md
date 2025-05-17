@@ -1,6 +1,6 @@
 ---
 id: 67e2a513dbffdc8dcf1700af
-title: What Is the useOptimistic Hook, and How Does It Work?
+title: 什么是 useOptimistic 钩子，它是如何工作的？
 challengeType: 11
 videoId: ZmjYqlrU4g0
 dashedName: what-is-the-useoptimistic-hook-and-how-does-it-work
@@ -8,45 +8,45 @@ dashedName: what-is-the-useoptimistic-hook-and-how-does-it-work
 
 # --description--
 
-Watch the video or read the transcript and answer the questions below.
+观看视频或阅读文字稿并回答下列问题。
 
 # --transcript--
 
-What is the `useOptimistic` hook and how does it work?
+什么是 `useOptimistic` 钩子，它是如何工作的？
 
-Recent versions of React introduced server components and server actions to shift some of the rendering and logic responsibilities to the server.
+React 的最新版本引入了服务器组件和服务器操作，将部分渲染和逻辑责任转移到服务器端。
 
-Along with those updates, React added a new hook called `useOptimistic` to keep UIs responsive while waiting for an async action to complete in the background.
+随着这些更新，React 增加了一个新的钩子 `useOptimistic`，用于在等待异步操作在后台完成时保持 UI 的响应性。
 
-While this is often used for fetching data from a server, it's not limited to that. The hook is generally useful for handling async operations, ensuring the UI remains smooth and interactive while the action runs.
+虽然它通常用于从服务器获取数据，但并不仅限于此。这个钩子通常用于处理异步操作，确保在操作运行时 UI 保持流畅和可交互。
 
-Let's take a look at what the `useOptimistic` hook is and how it contributes to making snappy and responsive UIs. 
+让我们来看看 `useOptimistic` 钩子是什么，以及它如何帮助实现流畅和响应迅速的 UI。
 
-The `useOptimistic` hook helps manage "optimistic updates" in the UI, a strategy in which you provide immediate updates to the UI based on the expected outcome of an action, like waiting for a server response.
+`useOptimistic` 钩子帮助管理 UI 中的“乐观更新”，这是一种根据操作的预期结果立即更新 UI 的策略，比如等待服务器响应时。
 
-Here's the basic syntax of the `useOptimistic` hook:
+以下是 `useOptimistic` 钩子的基本语法：
 
 ```js
 const [optimisticState, addOptimistic] = useOptimistic(actualState, updateFunction);
 ```
 
-- `optimisticState` is the temporary state that updates right away for a better user experience.
+- `optimisticState` 是临时状态，会立即更新以提升用户体验。
 
-- `addOptimistic` is the function that applies the optimistic update before the actual state changes.
+- `addOptimistic` 是在实际状态改变前应用乐观更新的函数。
 
-- `actualState` is the real state value that comes from the result of an action, like fetching data from a server.
+- `actualState` 是来自操作结果的真实状态值，比如从服务器获取的数据。
 
-- `updateFunction` is the function that determines how the optimistic state should update when called.
+- `updateFunction` 是在调用时决定乐观状态如何更新的函数。
 
-At first glance, it might seem like the `useOptimistic` hook is just another way to handle loading states in React. But it's more than that.
+乍一看，`useOptimistic` 钩子似乎只是另一种处理 React 加载状态的方法。但它不仅如此。
 
-A loading state controls whether you see a spinner, message, or some other indicator in the UI while something happens in the background.
+加载状态控制在后台发生某些事情时，UI 是否显示加载动画、消息或其他指示器。
 
-However, the `useOptimistic` hook updates the UI instantaneously based on an expected outcome, even before you, say, make a call to an API. This hook gives you a chance to show a loading indicator or message, handle potential errors gracefully, and show instant feedback to make the UI feel snappy.
+而 `useOptimistic` 钩子则是在你发起 API 请求之前，就根据预期结果即时更新 UI。这个钩子让你有机会显示加载指示或消息，优雅地处理潜在错误，并即时反馈，让 UI 更加流畅。
 
-This will become clearer as we go through some examples showing how the `useOptimistic` hook works.
+通过一些示例，你会更清楚地理解 `useOptimistic` 钩子的工作方式。
 
-Here's an action that simulates saving a task to a server. It returns the task after a 1 second delay, as it could happen with a real-world API request:
+下面是一个模拟将任务保存到服务器的操作。它会延迟 1 秒后返回任务，类似真实 API 请求的情况：
 
 ```js
 export async function saveTask(task) {
@@ -56,7 +56,7 @@ export async function saveTask(task) {
 }
 ```
 
-Here's the code that sets up the `useOptimistic` hook by importing and initializing it, with an `handleSubmit` function that sends an input to the action:
+下面是通过导入和初始化 `useOptimistic` 钩子，并设置 `handleSubmit` 函数将输入发送到操作的代码：
 
 ```js
 "use client";
@@ -83,13 +83,13 @@ export default function TaskList({ tasks, addTask }) {
 }
 ```
 
-In the code, the `useOptimistic` hook keeps a temporary list of tasks that updates immediately when you add a new task.
+在这段代码中，`useOptimistic` 钩子维护了一个临时任务列表，当你添加新任务时会立即更新。
 
-The line, `(state, newTask) => [...state, { text: newTask, pending: true }]` ensures that a new task appears with a pending status even before the server confirms something is coming from the form.
+`(state, newTask) => [...state, { text: newTask, pending: true }]` 这一行确保新任务会以 pending 状态出现，即使服务器还未确认表单内容。
 
-When the form is submitted, the `handleSubmit` function extracts the task and adds it "optimistically" with the `addOptimisticTask` parameter. Then `addTask` is passed as a prop which sends the task to the server. Finally, the form is reset by calling `e.target.reset()`.
+当表单提交时，`handleSubmit` 函数提取任务，并通过 `addOptimisticTask` 参数“乐观地”添加它。然后 `addTask` 作为 prop 发送任务到服务器。最后通过 `e.target.reset()` 重置表单。
 
-Here's the `TaskList` component:
+下面是 `TaskList` 组件：
 
 ```js
 "use client";
@@ -115,7 +115,7 @@ export default function TaskList({ tasks, addTask }) {
 
   return (
     <div className="max-w-md mx-auto p-4">
-      <h3 className="text-xl font-medium mb-3">Tasks</h3>
+      <h3 className="text-xl font-medium mb-3">任务列表</h3>
 
       <ul className="space-y-2 mb-4">
         {optimisticTasks.map((task, index) => (
@@ -123,7 +123,7 @@ export default function TaskList({ tasks, addTask }) {
             {task.text}
             {task.pending && (
               <small className="ml-2 text-gray-500 text-sm">
-                Adding Task...
+                正在添加任务...
               </small>
             )}
           </li>
@@ -134,11 +134,11 @@ export default function TaskList({ tasks, addTask }) {
         <input
           type="text"
           name="task"
-          placeholder="Type in a task..."
+          placeholder="输入任务..."
           className="flex-1 p-2 border"
         />
         <button type="submit" className="bg-gray-200 px-3 py-2 cursor-pointer">
-          Submit
+          提交
         </button>
       </form>
     </div>
@@ -146,9 +146,9 @@ export default function TaskList({ tasks, addTask }) {
 }
 ```
 
-Here, we are looping through the `optimisticTask` parameter to display the task. When `task.pending` is `true`, the text `Adding Task...` is displayed next to the task, confirming that the task has been added optimistically before the server confirms it.
+这里，我们遍历 `optimisticTasks` 参数来展示任务。当 `task.pending` 为 `true` 时，会在任务旁边显示“正在添加任务...”，表明任务已被乐观地添加，尚未获得服务器确认。
 
-Here's the `Task` component that manages the state for the form. It calls the `saveTask` function from the action so it can add the task, and appends the new task once it is received by the server:
+下面是管理表单状态的 `Task` 组件。它调用 action 中的 `saveTask` 函数以添加任务，并在收到服务器返回的新任务后追加到列表：
 
 ```js
 "use client";
@@ -171,13 +171,13 @@ export default function Tasks() {
 }
 ```
 
-This ensures snappy UI updates by showing instant feedback instead of waiting for a response. Once the task is saved, the `pending` property is removed, and the final task list updates accordingly.
+这样可以通过即时反馈实现流畅的 UI 更新，而无需等待响应。一旦任务保存完成，`pending` 属性会被移除，最终任务列表会相应更新。
 
-In the UI, there are two things happening that are not supposed to happen. First, you can't see the `Adding Task...` text since it appears and disappears too quickly. Next, there's an error occurring after adding the task.
+在 UI 中，有两件事本不该发生。首先，“正在添加任务...”文本看不到，因为它出现和消失得太快。其次，添加任务后会出现错误。
 
-There are two things we need to do to address those issues.
+我们需要做两件事来解决这些问题。
 
-First, we need to import `startTransition` from React and use it to wrap the line `addOptimisticTask(formData.get('task'))`:
+首先，需要从 React 导入 `startTransition` 并用它包裹 `addOptimisticTask(formData.get('task'))` 这一行：
 
 ```js
 startTransition(() => {
@@ -185,19 +185,19 @@ startTransition(() => {
 });
 ```
 
-Second, we need to make the `Adding Task...` text visible for some time before it goes away.
+其次，需要让“正在添加任务...”文本在消失前可见一段时间。
 
-To do this, we can modify the `addTask` function with a pending state and simulate a delay of a few seconds before marking the task as completed. `setTimeout()` is ideal for this:
+为此，可以用 pending 状态修改 `addTask` 函数，并用 `setTimeout()` 模拟几秒延迟：
 
 ```js
 async function addTask(formData) {
   const newTaskText = formData.get("task");
 
-  // Add an optimistic task with a pending state
+  // 添加带 pending 状态的乐观任务
   const tempTask = { id: Date.now(), text: newTaskText, pending: true };
   setTasks((prev) => [...prev, tempTask]);
 
-  // Simulate a 3 seconds delay before marking the task as completed
+  // 模拟 3 秒延迟后将任务标记为已完成
   setTimeout(async () => {
     const savedTask = await saveTask(newTaskText);
 
@@ -212,41 +212,41 @@ async function addTask(formData) {
 }
 ```
 
-And once you do that, everything works fine.
+这样一来，一切就能正常工作了。
 
 # --questions--
 
 ## --text--
 
-What is the purpose of the `useOptimistic` hook?
+`useOptimistic` 钩子的作用是什么？
 
 ## --answers--
 
-It allows components to fetch data from the server before rendering the UI.
+它允许组件在渲染 UI 之前从服务器获取数据。
 
 ### --feedback--
 
-This hook ensures the UI reflects expected changes before an async operation completes.
+该钩子确保 UI 在异步操作完成前反映预期的变化。
 
 ---
 
-It helps manage optimistic updates by updating the UI immediately while waiting for an async operation, like a server response.
+它通过在等待异步操作（如服务器响应）时立即更新 UI，帮助管理乐观更新。
 
 ---
 
-It enables automatic error handling and rollback for failed API requests in React applications.
+它让 React 应用自动处理错误并在 API 请求失败时回滚。
 
 ### --feedback--
 
-This hook ensures the UI reflects expected changes before an async operation completes.
+该钩子确保 UI 在异步操作完成前反映预期的变化。
 
 ---
 
-It optimizes state updates by batching them together to improve performance.
+它通过批量处理状态更新来提升性能。
 
 ### --feedback--
 
-This hook ensures the UI reflects expected changes before an async operation completes.
+该钩子确保 UI 在异步操作完成前反映预期的变化。
 
 ## --video-solution--
 
@@ -254,35 +254,35 @@ This hook ensures the UI reflects expected changes before an async operation com
 
 ## --text--
 
-How is the `useOptimistic` hook different from a loading state?
+`useOptimistic` 钩子与加载状态有何不同？
 
 ## --answers--
 
-A loading state shows UI feedback while waiting for a response, whereas `useOptimistic` updates the UI immediately based on an expected outcome.
+加载状态在等待响应时显示 UI 反馈，而 `useOptimistic` 会基于预期结果立即更新 UI。
 
 ---
 
-A loading state modifies server data instantly while `useOptimistic` only updates the client UI.
+加载状态会立即修改服务器数据，而 `useOptimistic` 只更新客户端 UI。
 
 ### --feedback--
 
-One updates the UI before the server even knows about the request.
+乐观更新会在服务器收到请求前就更新 UI。
 
 ---
 
-The `useOptimistic` hook is used for handling errors, whereas a loading state is only for showing spinners.
+`useOptimistic` 钩子用于处理错误，而加载状态只用于显示加载动画。
 
 ### --feedback--
 
-One updates the UI before the server even knows about the request.
+乐观更新会在服务器收到请求前就更新 UI。
 
 ---
 
-Both are the same, but `useOptimistic` provides automatic retries for failed requests.
+两者一样，但 `useOptimistic` 会为失败请求自动重试。
 
 ### --feedback--
 
-One updates the UI before the server even knows about the request.
+乐观更新会在服务器收到请求前就更新 UI。
 
 ## --video-solution--
 
@@ -290,7 +290,7 @@ One updates the UI before the server even knows about the request.
 
 ## --text--
 
-What does `addOptimistic` do in the `useOptimistic` hook syntax below?
+在下面的 `useOptimistic` 钩子语法中，`addOptimistic` 的作用是什么？
 
 ```js
 const [optimisticState, addOptimistic] = useOptimistic(actualState, updateFunction);
@@ -298,32 +298,33 @@ const [optimisticState, addOptimistic] = useOptimistic(actualState, updateFuncti
 
 ## --answers--
 
-It applies the optimistic update before the actual state changes, providing a smoother user experience.
+它会在实际状态改变前应用乐观更新，带来更流畅的用户体验。
 
 ---
 
-It fetches the real state from the server and updates the UI accordingly.
+它从服务器获取真实状态并相应更新 UI。
 
 ### --feedback--
 
-This function updates the UI before the actual state changes.
+该函数会在实际状态改变前更新 UI。
 
 ---
 
-It replaces the actual state with a temporary state after receiving a server response.
+它在收到服务器响应后用临时状态替换实际状态。
 
 ### --feedback--
 
-This function updates the UI before the actual state changes.
+该函数会在实际状态改变前更新 UI。
 
 ---
 
-It validates server data before applying the optimistic update to the UI.
+它会在将乐观更新应用到 UI 前校验服务器数据。
 
 ### --feedback--
 
-This function updates the UI before the actual state changes.
+该函数会在实际状态改变前更新 UI。
 
 ## --video-solution--
 
 1
+

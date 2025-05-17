@@ -1,6 +1,6 @@
 ---
 id: 672bc4ff5e7a4bbdee8ba013
-title: What Are Named Colors in CSS, and When to Use Them?
+title: CSS中的命名颜色是什么，什么时候使用它们？
 challengeType: 11
 videoId: YD7ndioXOyM
 dashedName: what-are-named-colors-in-css
@@ -8,13 +8,13 @@ dashedName: what-are-named-colors-in-css
 
 # --description--
 
-Watch the video or read the transcript and answer the questions below.
+观看视频或阅读文字记录，然后回答下面的问题。
 
 # --transcript--
 
-What are named colors in CSS, and when to use them?
+CSS中的命名颜色是什么，什么时候使用它们？
 
-In CSS, colors play a crucial role in designing web pages, enhancing readability, setting the mood, and improving user experience. One of the simplest ways to define colors in CSS is by using named colors. Named colors are predefined color names recognized by browsers. Here is an example of using a named color for a paragraph element:
+在CSS中，颜色在网页设计中扮演着至关重要的角色，它们能提高可读性、设定氛围并改善用户体验。在CSS中定义颜色最简单的方法之一是使用命名颜色。命名颜色是浏览器能够识别的预定义颜色名称。以下是为段落元素使用命名颜色的示例：
 
 ```css
 p {
@@ -22,11 +22,11 @@ p {
 }
 ```
 
-In this example, we're using the named color `red` to style the text in a paragraph.
+在这个示例中，我们使用命名颜色`red`（红色）来设置段落中文本的样式。
 
-Named colors in CSS are a collection of 140 standard color names like `red`, `blue`, `yellow`, `aqua`, `fuchsia`, `black`, and so on. These names are simple to use and make your code more readable, and they are self-descriptive.
+CSS中的命名颜色是一组140种标准颜色名称，如`red`（红色）、`blue`（蓝色）、`yellow`（黄色）、`aqua`（水绿色）、`fuchsia`（紫红色）、`black`（黑色）等。这些名称使用简单，能使代码更具可读性，而且它们是自描述的。
 
-Named colors are useful for quick prototyping, simple designs, and improving code readability. Here is an another example of using named colors for an `h1` selector:
+命名颜色对于快速原型设计、简单设计和提高代码可读性非常有用。以下是另一个为`h1`选择器使用命名颜色的示例：
 
 ```css
 h1 {
@@ -35,47 +35,47 @@ h1 {
 }
 ```
 
-In this example, the heading text will be styled in navy, with a light gray background. The readability of the code improves since named colors provide an immediate visual understanding of the intended style.
+在这个示例中，标题文本的颜色将为海军蓝，背景为浅灰色。代码的可读性得到提高，因为命名颜色能立即让人理解所期望的样式。
 
-Named colors in CSS are convenient but limited, with only 140 available options. They may not offer the precise shade needed for more detailed designs.
+CSS中的命名颜色虽然方便，但仅有140种可选项，选择有限。对于需要更精确色调的详细设计，它们可能无法提供所需的准确色彩。
 
-Named colors in CSS are a great way to apply colors quickly and descriptively. While they are useful for basic designs, prototyping, and improving code readability, their limited range makes them less suitable for complex designs requiring precise color control.
+CSS中的命名颜色是快速且直观地应用颜色的好方式。虽然它们对基本设计、原型设计和提高代码可读性很有用，但其有限的范围使其不太适合需要精确颜色控制的复杂设计。
 
-By understanding the strengths and limitations of named colors, you can determine when it’s best to use them over more detailed color models like RGB or HSL, which you will learn about in future videos.
+通过了解命名颜色的优势和局限性，你可以判断何时最好使用它们，而不是使用更详细的颜色模型，如RGB或HSL（这些将在未来的视频中学习）。
 
 # --questions--
 
 ## --text--
 
-What is a key benefit of using named colors in CSS?
+使用CSS中的命名颜色的主要优点是什么？
 
 ## --answers--
 
-Named colors allow you to create gradients.
+命名颜色允许你创建渐变。
 
 ### --feedback--
 
-Think about the simplicity and readability aspect of named colors.
+考虑一下命名颜色的简单性和可读性方面。
 
 ---
 
-Named colors are simpler to write and make code more readable.
+命名颜色更容易书写，并使代码更具可读性。
 
 ---
 
-Named colors provide a wider range of color options than hex codes.
+命名颜色比十六进制代码提供更广泛的颜色选择。
 
 ### --feedback--
 
-Think about the simplicity and readability aspect of named colors.
+考虑一下命名颜色的简单性和可读性方面。
 
 ---
 
-Named colors are the most precise way to define colors in web design.
+命名颜色是在网页设计中定义颜色最精确的方式。
 
 ### --feedback--
 
-Think about the simplicity and readability aspect of named colors.
+考虑一下命名颜色的简单性和可读性方面。
 
 ## --video-solution--
 
@@ -83,35 +83,35 @@ Think about the simplicity and readability aspect of named colors.
 
 ## --text--
 
-In what scenario might named colors not be the best choice?
+在什么情况下命名颜色可能不是最佳选择？
 
 ## --answers--
 
-When you need to quickly prototype a design.
+当你需要快速设计原型时。
 
 ### --feedback--
 
-Think about the limitations of named colors in more complex designs.
+考虑一下命名颜色在更复杂设计中的局限性。
 
 ---
 
-When your design requires very specific or nuanced shades of color.
+当你的设计需要非常具体或细微的色调时。
 
 ---
 
-When your design involves only primary colors.
+当你的设计只涉及基本颜色时。
 
 ### --feedback--
 
-Think about the limitations of named colors in more complex designs.
+考虑一下命名颜色在更复杂设计中的局限性。
 
 ---
 
-When collaborating with others on a simple project.
+当与他人合作一个简单项目时。
 
 ### --feedback--
 
-Think about the limitations of named colors in more complex designs.
+考虑一下命名颜色在更复杂设计中的局限性。
 
 ## --video-solution--
 
@@ -119,7 +119,7 @@ Think about the limitations of named colors in more complex designs.
 
 ## --text--
 
-Which of the following is an example of a named color in CSS?
+以下哪项是CSS中的命名颜色示例？
 
 ## --answers--
 
@@ -127,7 +127,7 @@ Which of the following is an example of a named color in CSS?
 
 ### --feedback--
 
-Named colors are descriptive words, not numerical codes.
+命名颜色是描述性词语，不是数字代码。
 
 ---
 
@@ -135,7 +135,7 @@ Named colors are descriptive words, not numerical codes.
 
 ### --feedback--
 
-Named colors are descriptive words, not numerical codes.
+命名颜色是描述性词语，不是数字代码。
 
 ---
 
@@ -147,7 +147,7 @@ Named colors are descriptive words, not numerical codes.
 
 ### --feedback--
 
-Named colors are descriptive words, not numerical codes.
+命名颜色是描述性词语，不是数字代码。
 
 ## --video-solution--
 

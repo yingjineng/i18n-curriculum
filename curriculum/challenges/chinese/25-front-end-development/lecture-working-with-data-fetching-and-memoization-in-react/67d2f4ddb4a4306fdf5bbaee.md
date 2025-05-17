@@ -1,6 +1,6 @@
 ---
 id: 67d2f4ddb4a4306fdf5bbaee
-title: What Is Memoization, and How Does the useMemo Hook Work?
+title: 什么是记忆化（Memoization），useMemo Hook 如何工作？
 challengeType: 11
 videoId: 2X7LD_6P4eI
 dashedName: what-is-memoization-and-how-does-the-usememo-hook-work
@@ -8,75 +8,72 @@ dashedName: what-is-memoization-and-how-does-the-usememo-hook-work
 
 # --description--
 
-Watch the video or read the transcript and answer the questions below.
+观看视频或阅读文字稿并回答下方问题。
 
 # --transcript--
 
-What is memoization and how does the `useMemo` hook work?
+什么是记忆化（memoization），以及 `useMemo` hook 是如何工作的？
 
-As your React app gets larger, unnecessary re-renders and expensive calculations can slow down performance, leading to slow UI updates and increased resource usage.
+随着你的 React 应用变得越来越大，不必要的重新渲染和昂贵的计算会拖慢性能，导致 UI 更新变慢和资源使用增加。
 
-This can be especially problematic in apps with complex state management, large lists, functions that require heavy computations, and many components with a single parent.
+这在具有复杂状态管理、大型列表、需要大量计算的函数以及许多拥有同一个父组件的组件的应用中尤其突出。
 
-This gives rise to the need to optimize your React app for better performance by minimizing redundant computations and ensuring smoother interactions.
+因此，我们需要优化 React 应用的性能，减少重复计算，确保交互更加流畅。
 
-React solves this problem with a process called memoization, a technique which caches values and functions to prevent unnecessary recalculations, so your app can be faster and more responsive.
+React 通过一种叫做记忆化（memoization）的过程来解决这个问题。这是一种缓存值和函数以防止不必要重复计算的技术，从而让你的应用更快、更灵敏。
 
-By definition, memoization is an optimization technique in which the result of expensive function calls are cached (remembered) based on specific arguments. When the same arguments are provided again, the cached result is returned instead of re-computing the function.
+记忆化的定义是：一种优化技术，将昂贵函数调用的结果基于特定参数进行缓存（记住）。当再次传入相同参数时，直接返回缓存结果，而不是重新计算。
 
-The memoization process happens this way:
+记忆化的过程如下：
 
-- Store the results of function calls along with their input arguments.
+- 存储函数调用的结果以及它们的输入参数。
+- 在执行函数前，检查当前参数的结果是否已存在于缓存中。
+- 如果存在，直接返回缓存结果，而不是再次计算。
+- 如果不存在，计算结果，存入缓存，然后返回。
 
-- Before executing the function, check if the result for the current arguments already exists in the cache.
+为了提升开发体验，React 提供了三种记忆化工具 —— `React.memo`（或 `memo`）、`useMemo` 和 `useCallback`。
 
-- If it exists, return the cached result instead of running the computation again.
+你可能已经猜到，`useMemo` 和 `useCallback` 都是 hooks，而 `React.memo` 是一个组件包装器，也就是高阶函数（HOC）。
 
-- If it doesn't exist, compute the result, store it in the cache, and then return it.
+在下一讲中，我们会学习 `useCallback` hook 和 `React.memo` 的工作方式。
 
-To improve developer experience with memoization, React provides three tools – `React.memo` (or `memo`), `useMemo` and `useCallback`. 
+`useMemo` 用于记忆化计算值，而 `useCallback` 用于记忆化函数引用。
 
-As you might guess, both `useMemo` and `useCallback` are hooks, but `React.memo` is a component wrapper, a higher-order function (HOC).
+如果你在疑惑什么是计算值和函数引用，计算值指的是函数执行后的结果，而函数引用是指向函数的指针——即内存中的函数对象。
 
-In the next lecture, we will take a look at how the `useCallback` hook and `React.memo` work.
-
-`useMemo` lets you memoize computed values while `useCallback` does the same for function references.
-
-If you're wondering what computed values and function references are, computed values refer to the result of executing a function, while function references are the pointers to functions – the function object in memory.
-
-Let's see how to use the `useMemo` hook first. Here's the basic syntax of the `useMemo` hook:
+我们先来看一下 `useMemo` hook 的基本用法：
 
 ```js
 const memoizedValue = useMemo(
  function () {
-   return computeExpensiveValue(a, b);
+  return computeExpensiveValue(a, b);
  },
  [a, b]
 );
 ```
 
-You can see all that's needed is to wrap the `useMemo` hook around the function.
+你可以看到，只需要用 `useMemo` 包裹函数即可。
 
-This `ExpensiveSquare` component will receive a `num` prop which it will use to calculate the square:
+下面是一个 `ExpensiveSquare` 组件，它接收一个 `num` 属性并计算它的平方：
 
 ```js
 function ExpensiveSquare({ num }) {
  function calculateSquare(n) {
-   console.log("Calculating square...");
-   return n * n;
+  console.log("Calculating square...");
+  return n * n;
  }
 
  const squared = calculateSquare(num);
  return (
-   <p>
-     Square of {num}: {squared}
-   </p>
+  <p>
+    Square of {num}: {squared}
+  </p>
  );
 }
 export default ExpensiveSquare;
 ```
 
-Here's the `App` component where the `ExpensiveSquare` is being used:
+这是在 `App` 组件中使用 `ExpensiveSquare` 的例子：
 
 ```js
 import { useState, useEffect } from "react";
@@ -87,87 +84,87 @@ function App() {
  const [num, setNum] = useState(0);
 
  useEffect(() => {
-   const interval = setInterval(() => setTimer((c) => c + 1), 1000);
-   return () => clearInterval(interval);
+  const interval = setInterval(() => setTimer((c) => c + 1), 1000);
+  return () => clearInterval(interval);
  }, []);
 
  return (
-   <div>
-     <h1>Timer: {timer} seconds gone</h1>
-     <ExpensiveSquare num={num} />
-     <button onClick={() => setNum((n) => n + 1)}>Increase Number</button>
-   </div>
+  <div>
+    <h1>Timer: {timer} seconds gone</h1>
+    <ExpensiveSquare num={num} />
+    <button onClick={() => setNum((n) => n + 1)}>Increase Number</button>
+  </div>
  );
 }
 
 export default App;
 ```
 
-The `timer` in the `useEffect`, running every second, will make the `calculateSquare` function runs any time it runs, even when you don't increase the `num` state variable.
+`useEffect` 中的 `timer` 每秒都会更新，这会导致 `calculateSquare` 每次都运行，即使你没有增加 `num` 状态变量。
 
-To solve this problem, we can use the `useMemo` hook by wrapping the function call in it and specifying the `num` variable as the dependency:
+为了解决这个问题，我们可以用 `useMemo` hook 包裹函数调用，并将 `num` 作为依赖项：
 
 ```js
-// import the useMemo hook
+// 导入 useMemo hook
 import { useMemo } from "react";
 
 function ExpensiveSquare({ num }) {
   function calculateSquare(n) {
-    console.log("Calculating square...");
-    return n * n;
+   console.log("Calculating square...");
+   return n * n;
   }
 
   // const squared = calculateSquare(num);
-  // Wrap the function call in useMemo instead
+  // 用 useMemo 包裹函数调用
   const squared = useMemo(() => calculateSquare(num), [num]);
 
   return (
-    <p>
-      Square of {num}: {squared}
-    </p>
+   <p>
+    Square of {num}: {squared}
+   </p>
   );
 }
 
 export default ExpensiveSquare;
 ```
 
-This will make sure the function is memoized by caching the result, so calculation happens only when the `num` variable changes, not when anything changes in the component it's being used in.
+这样可以确保函数被记忆化并缓存结果，只有当 `num` 变量变化时才会重新计算，而不是每次组件更新时都计算。
 
-The `calculateSquare` function call is not running any time `timer` changes anymore but on the initial render and when `num` changes.
+现在，`calculateSquare` 只会在初次渲染和 `num` 变化时运行，而不会因为 `timer` 变化而运行。
 
 # --questions--
 
 ## --text--
 
-What is memoization in React?
+React 中的记忆化（memoization）是什么？
 
 ## --answers--
 
-A technique that caches values and functions to prevent unnecessary recalculations.
+一种缓存值和函数以防止不必要重复计算的技术。
 
 ---
 
-A technique that lets you manage component state updates to prevent unnecessary recalculations.
+一种让你管理组件状态更新以防止不必要重复计算的技术。
 
 ### --feedback--
 
-It helps optimize performance by storing previously computed results.
+它通过存储之前计算的结果来优化性能。
 
 ---
 
-A process of reconciling the Virtual DOM with the actual DOM.
+将虚拟 DOM 与实际 DOM 对比的过程。
 
 ### --feedback--
 
-It helps optimize performance by storing previously computed results.
+它通过存储之前计算的结果来优化性能。
 
 ---
 
-A way to handle side effects in functional components.
+在函数组件中处理副作用的方法。
 
 ### --feedback--
 
-It helps optimize performance by storing previously computed results.
+它通过存储之前计算的结果来优化性能。
 
 ## --video-solution--
 
@@ -175,35 +172,35 @@ It helps optimize performance by storing previously computed results.
 
 ## --text--
 
-What is the difference between computed values and function references?
+计算值（computed values）和函数引用（function references）有什么区别？
 
 ## --answers--
 
-Computed values are function objects, while function references are execution results.
+计算值是函数对象，函数引用是执行结果。
 
 ### --feedback--
 
-One is the output of a function, while the other is just a pointer to it.
+一个是函数的输出，另一个只是指向函数的指针。
 
 ---
 
-Computed values are the result of executing a function, while function references are the function objects in memory.
+计算值是函数执行的结果，函数引用是内存中的函数对象。
 
 ---
 
-Computed values and function references are the same thing.
+计算值和函数引用是同一个东西。
 
 ### --feedback--
 
-One is the output of a function, while the other is just a pointer to it.
+一个是函数的输出，另一个只是指向函数的指针。
 
 ---
 
-Function references store computed values.
+函数引用存储计算值。
 
 ### --feedback--
 
-One is the output of a function, while the other is just a pointer to it.
+一个是函数的输出，另一个只是指向函数的指针。
 
 ## --video-solution--
 
@@ -211,7 +208,7 @@ One is the output of a function, while the other is just a pointer to it.
 
 ## --text--
 
-Which of these is NOT one of the tools React provides for memoization?
+以下哪一个不是 React 提供的记忆化工具？
 
 ## --answers--
 
@@ -219,7 +216,7 @@ Which of these is NOT one of the tools React provides for memoization?
 
 ### --feedback--
 
-Memoization tools focus on caching values and functions, while this option handles side effects.
+记忆化工具关注于缓存值和函数，而这个选项用于处理副作用。
 
 ---
 
@@ -227,7 +224,7 @@ Memoization tools focus on caching values and functions, while this option handl
 
 ### --feedback--
 
-Memoization tools focus on caching values and functions, while this option handles side effects.
+记忆化工具关注于缓存值和函数，而这个选项用于处理副作用。
 
 ---
 
@@ -235,7 +232,7 @@ Memoization tools focus on caching values and functions, while this option handl
 
 ### --feedback--
 
-Memoization tools focus on caching values and functions, while this option handles side effects.
+记忆化工具关注于缓存值和函数，而这个选项用于处理副作用。
 
 ---
 
@@ -243,8 +240,9 @@ Memoization tools focus on caching values and functions, while this option handl
 
 ### --feedback--
 
-Memoization tools focus on caching values and functions, while this option handles side effects.
+记忆化工具关注于缓存值和函数，而这个选项用于处理副作用。
 
 ## --video-solution--
 
 4
+
